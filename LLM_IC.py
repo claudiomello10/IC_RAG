@@ -121,4 +121,4 @@ class LLM_IC:
             {"role": "user", "content": query},
         ]
         output = self.pipe(messages, **self.generation_args)
-        return output[0]["generated_text"], rag_context
+        return output[0]["generated_text"]
