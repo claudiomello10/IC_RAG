@@ -59,12 +59,14 @@ class LLM_IC:
         self.faiss_index.add(embeddings)
 
         # Load the model
+        print("Loading the model")
         model = AutoModelForCausalLM.from_pretrained(
             "microsoft/Phi-3-mini-128k-instruct",
             device_map="auto",
             torch_dtype="auto",
-            trust_remote_code=True,
+            trust_remote_code=False,
         )
+        print("Model loaded")
 
         tokenizer = AutoTokenizer.from_pretrained("microsoft/Phi-3-mini-128k-instruct")
 
@@ -111,7 +113,12 @@ class LLM_IC:
         output = self.pipe(messages, **self.generation_args)
         return output[0]["generated_text"]
 
-
-model = LLM_IC(embeddings_path="full_df_embeddings.json")
-query = "What is the difference between a regression and a classification problem?"
-print(model.generate_text(query))
+    def generate_text_cite(self, query: str):
+        rag_context = self.generate_rag_text(query)
+        query = f"{query}\n\n Cite os capitulos do contexto sempre que conveniente para responder"
+        messages = [
+            {"role": "system", "content": rag_context},
+            {"role": "user", "content": query},
+        ]
+        output = self.pipe(messages, **self.generation_args)
+        return output[0]["generated_text"], rag_context
