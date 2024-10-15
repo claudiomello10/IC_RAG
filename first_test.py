@@ -17,5 +17,5 @@ llm = LLM_IC(embeddings_path="full_df_embeddings.json")
 query = input("LLM_IC: ")
 
 # Generate the text
-# print(llm.generate_text_cite(query))
-print(llm.generate_text(query))
+print(llm.generate_text_cite(query))
+# print(llm.generate_text(query))

@@ -115,7 +115,7 @@ class LLM_IC:
 
     def generate_text_cite(self, query: str):
         rag_context = self.generate_rag_text(query)
-        query = f"{query}\n\n Cite os capitulos do contexto sempre que conveniente para responder"
+        query = f"{query}\n\n if relevant cite chapters and sections of the book that were used in the response"
         messages = [
             {"role": "system", "content": rag_context},
             {"role": "user", "content": query},
