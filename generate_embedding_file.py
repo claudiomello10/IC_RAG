@@ -24,6 +24,8 @@ reader = PdfReader(
 )
 
 
+BOOK_NAME = "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow"
+
 # Get the chapter titles
 
 
@@ -108,6 +110,7 @@ for i in tqdm(range(0, len(summary_df)), desc="Processing chapters", unit="chapt
                 "Chapter": summary_df.iloc[i]["Chapter"],
                 "Title": summary_df.iloc[i]["Title"],
                 "Text": chunk,
+                "Book": BOOK_NAME,
             },
             ignore_index=True,
         )
@@ -124,5 +127,4 @@ full_df["Embedding"] = full_df["Text"].progress_apply(
 )
 
 print("Saving the embeddings to a file")
-full_df.to_parquet("full_df_embeddings.parquet")
 full_df.to_json("full_df_embeddings.json", orient="records")

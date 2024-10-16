@@ -36,6 +36,7 @@ class LLM_IC:
                     "Chapter": item["Chapter"],
                     "Title": item["Title"],
                     "Text": item["Text"],
+                    "Book": item["Book"],
                     "Embedding": np.array(item["Embedding"]),
                 }
             )
@@ -60,7 +61,7 @@ class LLM_IC:
 
         # Load the model
         print("Loading the model")
-        model = AutoModelForCausalLM.from_pretrained(
+        self.model = AutoModelForCausalLM.from_pretrained(
             "microsoft/Phi-3-mini-128k-instruct",
             device_map="auto",
             torch_dtype="auto",
@@ -68,7 +69,9 @@ class LLM_IC:
         )
         print("Model loaded")
 
-        tokenizer = AutoTokenizer.from_pretrained("microsoft/Phi-3-mini-128k-instruct")
+        self.tokenizer = AutoTokenizer.from_pretrained(
+            "microsoft/Phi-3-mini-128k-instruct"
+        )
 
         self.pipe = pipeline(
             "text-generation",
@@ -97,10 +100,10 @@ class LLM_IC:
 
     def generate_rag_text(self, query: str, top_k: int = 5):
         search_results = self.search(query, top_k)
-        rag_text = "This is a context for the user query retrieved from the Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow book\n\n"
+        rag_text = "This is a context for the user query retrieved from several books and documents\n\n"
         retrieval_count = 1
         for index, row in search_results.iterrows():
-            rag_text += f"Retriaval {retrieval_count}: From Chapter {row['Chapter']} - {row['Title']}\n{row['Text']}\n\n"
+            rag_text += f"Retriaval {retrieval_count}: From Book {row["Book"]} - Chapter {row['Chapter']} - {row['Title']}\n{row['Text']}\n\n"
             retrieval_count += 1
         return rag_text
 
@@ -115,10 +118,20 @@ class LLM_IC:
 
     def generate_text_cite(self, query: str):
         rag_context = self.generate_rag_text(query)
-        query = f"{query}\n\n if relevant cite chapters and sections of the book that were used in the response"
+        query = f"{query}\n\n if relevant cite the books chapters and sections that were used in the response"
         messages = [
             {"role": "system", "content": rag_context},
             {"role": "user", "content": query},
         ]
         output = self.pipe(messages, **self.generation_args)
+        return output[0]["generated_text"]
+
+    def generate_text_cite_stream(self, query: str):
+        rag_context = self.generate_rag_text(query)
+        query = f"{query}\n\n if relevant cite the books chapters and sections that were used in the response"
+        messages = [
+            {"role": "system", "content": rag_context},
+            {"role": "user", "content": query},
+        ]
+        output = self.pipe(messages, **self.generation_args, stream=True)
         return output[0]["generated_text"]
