@@ -5,7 +5,6 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 import ujson as json
-import parquet
 
 
 class LLM_IC:
@@ -15,6 +14,7 @@ class LLM_IC:
         device: str = None,
         embeddings_model: str = "BAAI/bge-large-en",
         max_new_tokens: int = 2000,
+        load_model: bool = True,
     ):
 
         if embeddings_path is None:
@@ -43,7 +43,10 @@ class LLM_IC:
         # Create a dataframe
         self.embedding_df = pd.DataFrame(embedding_list)
 
+        # Load the embeddings model
+        print("Loading the embeddings model")
         self.embeddings_model = SentenceTransformer("BAAI/bge-large-en", device=device)
+        print("Embeddings model loaded")
 
         embeddings_dimension = self.embedding_df["Embedding"][0].shape[0]
 
@@ -59,29 +62,35 @@ class LLM_IC:
         self.faiss_index.add(embeddings)
 
         # Load the model
-        print("Loading the model")
-        model = AutoModelForCausalLM.from_pretrained(
-            "microsoft/Phi-3-mini-128k-instruct",
-            device_map="auto",
-            torch_dtype="auto",
-            trust_remote_code=False,
-        )
-        print("Model loaded")
+        if load_model:
+            print("Loading the model")
+            model = AutoModelForCausalLM.from_pretrained(
+                "microsoft/Phi-3-mini-128k-instruct",
+                device_map="auto",
+                torch_dtype="auto",
+                trust_remote_code=False,
+            )
+            print("Model loaded")
 
-        tokenizer = AutoTokenizer.from_pretrained("microsoft/Phi-3-mini-128k-instruct")
+            tokenizer = AutoTokenizer.from_pretrained(
+                "microsoft/Phi-3-mini-128k-instruct"
+            )
 
-        self.pipe = pipeline(
-            "text-generation",
-            model=model,
-            tokenizer=tokenizer,
-        )
+            self.pipe = pipeline(
+                "text-generation",
+                model=model,
+                tokenizer=tokenizer,
+            )
 
-        self.generation_args = {
-            "max_new_tokens": max_new_tokens,
-            "return_full_text": False,
-            "temperature": 0.0,
-            "do_sample": False,
-        }
+            self.generation_args = {
+                "max_new_tokens": max_new_tokens,
+                "return_full_text": False,
+                "temperature": 0.0,
+                "do_sample": False,
+            }
+        else:
+            self.pipe = None
+            print("Model not loaded")
 
     def search(self, query: str, top_k: int = 5):
         query_embedding = self.generate_embeddings(query)
