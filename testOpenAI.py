@@ -15,8 +15,9 @@ llm = LLM_IC_OPENAI(embeddings_path="full_df_embeddings.json")
 
 while True:
     # Get the input
-    query = input("LLM_IC: ")
+    query = input("User: ")
 
     # Generate the text
-    print(llm.generate_text_cite(query), end="\n\n")
+    print("\n\n")
+    print(f"LLM_IC: {llm.generate_text_cite(query)}", end="\n\n")
     # print(llm.generate_rag_text(query))
