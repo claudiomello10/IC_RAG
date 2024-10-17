@@ -13,32 +13,15 @@ warnings.filterwarnings("ignore")
 
 
 # Create the LLM_IC object
-llm = LLM_IC(embeddings_path="full_df_embeddings.json")
+llm = LLM_IC(embeddings_path=r"Data\intermediate\full_df_embeddings.json")
 
 # Get the input
-query = input("LLM_IC: ")
+query = input("\nUser: ")
 
-# Generate the text
+# Generate the response
+thread, streamer = llm.generate_text_cite_stream_thread(query)
 
-rag_context = llm.generate_rag_text(query)
-query = f"{query}\n\n if relevant cite the books chapters and sections that were used in the response"
-messages = [
-    {"role": "system", "content": rag_context},
-    {"role": "user", "content": query},
-]
-
-inputs = tokenizer.apply_chat_template(messages)
-inputs["input_ids"] = inputs["input_ids"]  # .to("cuda")
-
-
-streamer = TextIteratorStreamer(llm.tokenizer, skip_prompt=True)
-
-generation_kwargs = dict(inputs, streamer=streamer, max_new_tokens=1500)
-
-thread = Thread(target=llm.model.generate, kwargs=generation_kwargs)
-
-output = llm.pipe(messages, **llm.generation_args, stream=True)
-
-# Print the output
-
-print(output[0]["generated_text"])
+print("\n\nLLM_IC: ", end="")
+thread.start()
+for new_text in streamer:
+    print(new_text, end="")

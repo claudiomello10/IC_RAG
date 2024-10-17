@@ -5,7 +5,8 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 import ujson as json
-import parquet
+from transformers import TextIteratorStreamer
+from threading import Thread
 
 
 class LLM_IC:
@@ -75,8 +76,8 @@ class LLM_IC:
 
         self.pipe = pipeline(
             "text-generation",
-            model=model,
-            tokenizer=tokenizer,
+            model=self.model,
+            tokenizer=self.tokenizer,
         )
 
         self.generation_args = {
@@ -126,12 +127,21 @@ class LLM_IC:
         output = self.pipe(messages, **self.generation_args)
         return output[0]["generated_text"]
 
-    def generate_text_cite_stream(self, query: str):
+    def generate_text_cite_stream_thread(self, query: str):
         rag_context = self.generate_rag_text(query)
-        query = f"{query}\n\n if relevant cite the books chapters and sections that were used in the response"
+        query = f"{query}\n\n if relevant cite the books from the context"
         messages = [
             {"role": "system", "content": rag_context},
             {"role": "user", "content": query},
         ]
-        output = self.pipe(messages, **self.generation_args, stream=True)
-        return output[0]["generated_text"]
+        streamer = TextIteratorStreamer(self.tokenizer, skip_prompt=True)
+
+        generation_kwargs = dict(
+            text_inputs=messages,
+            streamer=streamer,
+            max_new_tokens=1500,
+            temperature=0.0,
+            do_sample=False,
+        )
+
+        return Thread(target=self.pipe, kwargs=generation_kwargs), streamer
