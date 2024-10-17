@@ -16,7 +16,7 @@ else:
     device = "cpu"
 
 
-CHUNK_SIZE = 1000
+CHUNK_SIZE = 3000
 
 # creating a pdf reader object
 reader = PdfReader(
@@ -124,5 +124,4 @@ full_df["Embedding"] = full_df["Text"].progress_apply(
 )
 
 print("Saving the embeddings to a file")
-full_df.to_parquet("full_df_embeddings.parquet")
 full_df.to_json("full_df_embeddings.json", orient="records")
