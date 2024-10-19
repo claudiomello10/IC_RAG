@@ -23,7 +23,7 @@ warnings.filterwarnings("ignore")
 
 
 # Create the LLM_IC object
-llm = LLM_IC_OPENAI(embeddings_path="full_df_embeddings.json")
+llm = LLM_IC_OPENAI(embeddings_path="full_df_embeddings_sections.json")
 
 # Ask the user for the mode
 answer = inquirer.prompt(questions)
@@ -40,6 +40,7 @@ if answer["run_mode"]:
             if r.choices[0].delta.content != None:
                 print(r.choices[0].delta.content, end="")
         print("\n\n")
+
 else:
     while True:
         # Get the input

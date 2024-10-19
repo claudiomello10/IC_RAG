@@ -165,6 +165,7 @@ class LLM_IC_OPENAI:
                     "Title": item["Title"],
                     "Text": item["Text"],
                     "Embedding": np.array(item["Embedding"]),
+                    "Topic": item["Topic"],
                 }
             )
 
@@ -214,7 +215,7 @@ class LLM_IC_OPENAI:
         """
         retrieval_count = 1
         for index, row in search_results.iterrows():
-            rag_text += f"Retriaval {retrieval_count}: From Chapter {row['Chapter']} - {row['Title']}\n{row['Text']}\n\n"
+            rag_text += f"Retriaval {retrieval_count}: From Chapter {row['Chapter']} - {row['Title']} - Section: {row['Topic']}\n{row['Text']}\n\n"
             retrieval_count += 1
         return rag_text
 
