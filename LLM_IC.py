@@ -218,7 +218,7 @@ class LLM_IC_OPENAI:
             retrieval_count += 1
         return rag_text
 
-    def generate_text_cite(self, query: str, model: str | None = None):
+    def generate_response(self, query: str, model: str | None = None):
         if model is None:
             model = self.model
         rag_context = self.generate_rag_text(query)
@@ -232,3 +232,17 @@ class LLM_IC_OPENAI:
             messages=messages,
         )
         return completion.choices[0].message.content
+
+    def generate_response_stream(self, query: str, model: str | None = None):
+        if model is None:
+            model = self.model
+        rag_context = self.generate_rag_text(query)
+        messages = [
+            {"role": "system", "content": rag_context},
+            {"role": "user", "content": query},
+        ]
+        # Get OPENAI_API_KEY from the environment
+        response = self.client.chat.completions.create(
+            model=model, messages=messages, stream=True
+        )
+        return response
