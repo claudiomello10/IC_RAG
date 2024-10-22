@@ -2,7 +2,7 @@ import os
 import inquirer
 
 os.environ["TRANSFORMERS_VERBOSITY"] = "error"
-from LLM_IC import LLM_IC_OPENAI
+from LLM_IC import LLM_IC
 
 
 questions = [
@@ -24,7 +24,7 @@ warnings.filterwarnings("ignore")
 
 
 # Create the LLM_IC object
-llm = LLM_IC_OPENAI(embeddings_path="full_df_embeddings_sections.json")
+llm = LLM_IC(embeddings_path="full_df_embeddings_sections.json")
 
 # Ask the user for the mode
 answer = inquirer.prompt(questions)
