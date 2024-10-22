@@ -53,14 +53,15 @@ for item in toc:
     entry_frame = tk.Frame(checkbox_frame)
     entry_frame.pack(anchor="w", fill="x")
 
-    chapter_checkbox = tk.Checkbutton(
-        entry_frame, text=f"Chapter: {item[1]}", variable=chapter_var
-    )
+    # Create a label for the chapter/topic
+    label = tk.Label(entry_frame, text=item[1])
+    label.pack(side="left")
+
+    # Create the checkboxes for chapter and topic
+    chapter_checkbox = tk.Checkbutton(entry_frame, text="Chapter", variable=chapter_var)
     chapter_checkbox.pack(side="left")
 
-    topic_checkbox = tk.Checkbutton(
-        entry_frame, text=f"Topic: {item[1]}", variable=topic_var
-    )
+    topic_checkbox = tk.Checkbutton(entry_frame, text="Topic", variable=topic_var)
     topic_checkbox.pack(side="left")
 
 
@@ -86,3 +87,17 @@ select_button.pack(side="bottom")
 
 # Start the Tkinter event loop
 root.mainloop()
+
+# Print the selected chapters and topics
+selected_chapters = [
+    chapter
+    for chapter, (chapter_var, topic_var) in checkbox_vars.items()
+    if chapter_var.get() == 1
+]
+selected_topics = [
+    topic
+    for topic, (chapter_var, topic_var) in checkbox_vars.items()
+    if topic_var.get() == 1
+]
+print(f"Selected chapters: {selected_chapters}")
+print(f"Selected topics: {selected_topics}")
