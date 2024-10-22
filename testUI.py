@@ -19,6 +19,7 @@ for item in toc:
 # Create the main window
 root = tk.Tk()
 root.title("Select Chapter")
+root.geometry("800x600")  # Set the window size to 800x600
 
 # Create a frame to hold the listbox and checkboxes
 frame = tk.Frame(root)
@@ -42,6 +43,7 @@ canvas.create_window((0, 0), window=checkbox_frame, anchor="nw")
 
 # Create a dictionary to hold the IntVar for each checkbox
 checkbox_vars = {}
+labels = []
 
 # Populate the frame with checkboxes for each chapter and topic
 for item in toc:
@@ -55,14 +57,15 @@ for item in toc:
 
     # Create a label for the chapter/topic
     label = tk.Label(entry_frame, text=item[1])
-    label.pack(side="left")
+    label.pack(side="left", padx=5)
+    labels.append(label)
 
     # Create the checkboxes for chapter and topic
     chapter_checkbox = tk.Checkbutton(entry_frame, text="Chapter", variable=chapter_var)
-    chapter_checkbox.pack(side="left")
+    chapter_checkbox.pack(side="right", padx=5)
 
     topic_checkbox = tk.Checkbutton(entry_frame, text="Topic", variable=topic_var)
-    topic_checkbox.pack(side="left")
+    topic_checkbox.pack(side="right", padx=5)
 
 
 # Function to get selected chapters and topics
@@ -81,9 +84,57 @@ def on_select():
     print(f"Selected topics: {selected_topics}")
 
 
-# Add a button to print the selected chapters and topics
-select_button = tk.Button(root, text="Select", command=on_select)
-select_button.pack(side="bottom")
+# Enable scrolling with the mouse wheel
+def on_mouse_wheel(event):
+    canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
+
+
+canvas.bind_all("<MouseWheel>", on_mouse_wheel)
+
+# Navigation with arrow keys
+current_label_index = 0
+
+
+def highlight_label(index):
+    for i, label in enumerate(labels):
+        if i == index:
+            label.config(bg="yellow")
+        else:
+            label.config(bg="white")
+
+
+highlight_label(current_label_index)
+
+
+def on_key_press(event):
+    global current_label_index
+
+    # Ensure the selected label is visible
+    label = labels[current_label_index]
+    canvas.update_idletasks()  # Update the canvas to get the correct height
+    canvas.yview_moveto(max(0, min(label.winfo_y() / checkbox_frame.winfo_height(), 1)))
+
+    if event.keysym == "Up":
+        if current_label_index > 0:
+            current_label_index -= 1
+    elif event.keysym == "Down":
+        if current_label_index < len(labels) - 1:
+            current_label_index += 1
+    elif event.keysym == "c":
+        chapter_var, topic_var = checkbox_vars[labels[current_label_index].cget("text")]
+        chapter_var.set(1 - chapter_var.get())
+    elif event.keysym == "t":
+        chapter_var, topic_var = checkbox_vars[labels[current_label_index].cget("text")]
+        topic_var.set(1 - topic_var.get())
+    elif event.keysym == "BackSpace":
+        chapter_var, topic_var = checkbox_vars[labels[current_label_index].cget("text")]
+        chapter_var.set(0)
+        topic_var.set(0)
+
+    highlight_label(current_label_index)
+
+
+root.bind("<KeyPress>", on_key_press)
 
 # Start the Tkinter event loop
 root.mainloop()
