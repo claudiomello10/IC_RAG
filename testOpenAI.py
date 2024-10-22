@@ -12,7 +12,6 @@ questions = [
         choices=[
             ("Stream the response", "stream"),
             ("Get the full answer in one time", "full"),
-            ("Conversational aware", "conversational"),
         ],
     ),
 ]
@@ -51,13 +50,3 @@ elif answer["run_mode"] == "full":
         print("\n\n")
         print(f"LLM_IC: {llm.generate_response(query)}", end="\n\n")
         # print(llm.generate_rag_text(query))
-
-elif answer["run_mode"] == "conversational":
-
-    while True:
-        # Get the input
-        query = input("User: ")
-
-        # Generate the text
-        print("\n\n")
-        print(f"LLM_IC: {llm.generate_conversation_response(query)}", end="\n\n")
