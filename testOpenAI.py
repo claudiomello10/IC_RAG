@@ -1,7 +1,12 @@
 import os
 import inquirer
+import warnings
 
+# Remove the warnings
+warnings.filterwarnings("ignore")
 os.environ["TRANSFORMERS_VERBOSITY"] = "error"
+
+# Import the LLM_IC class
 from LLM_IC import LLM_IC
 
 
@@ -15,11 +20,6 @@ questions = [
         ],
     ),
 ]
-
-# Remove the warnings
-import warnings
-
-warnings.filterwarnings("ignore")
 
 
 # Create the LLM_IC object

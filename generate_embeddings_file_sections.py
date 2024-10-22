@@ -19,11 +19,18 @@ else:
 CHUNK_SIZE = 3000
 
 
-def generate_chunks_Aurelien():
+def generate_chunks_Aurelien(
+    pdf_path: str = "./Livros/Utilizados/2-Aurelien-Geron-Hands-On-Machine-Learning-with-Scikit-Learn-Keras-and-Tensorflow_-Concepts-Tools-and-Techniques-to-Build-Intelligent-Systems-OReilly-Media-2019.pdf",
+):
+    """
+    Generate the chunks for the book "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow" by Aurelien Geron.
+    Args:
+        pdf_path (str): The path to the PDF file of the book.
+    Returns:
+        pd.DataFrame: The DataFrame containing the chunks of the book.
+    """
     # creating a pdf reader object
-    reader_aurelien = PdfReader(
-        "./Livros/Utilizados/2-Aurelien-Geron-Hands-On-Machine-Learning-with-Scikit-Learn-Keras-and-Tensorflow_-Concepts-Tools-and-Techniques-to-Build-Intelligent-Systems-OReilly-Media-2019.pdf"
-    )
+    reader_aurelien = PdfReader()
 
     # Get the chapter and section titles
     summary_dict = {}
