@@ -10,8 +10,9 @@ questions = [
         "run_mode",
         message="Select response mode:",
         choices=[
-            ("Stream the response", True),
-            ("Get the full answer in one time", False),
+            ("Stream the response", "stream"),
+            ("Get the full answer in one time", "full"),
+            ("Conversational aware", "conversational"),
         ],
     ),
 ]
@@ -28,7 +29,7 @@ llm = LLM_IC_OPENAI(embeddings_path="full_df_embeddings_sections.json")
 # Ask the user for the mode
 answer = inquirer.prompt(questions)
 
-if answer["run_mode"]:
+if answer["run_mode"] == "stream":
     while True:
         # Get the input
         query = input("\nUser: ")
@@ -41,7 +42,7 @@ if answer["run_mode"]:
                 print(r.choices[0].delta.content, end="")
         print("\n\n")
 
-else:
+elif answer["run_mode"] == "full":
     while True:
         # Get the input
         query = input("User: ")
@@ -50,3 +51,13 @@ else:
         print("\n\n")
         print(f"LLM_IC: {llm.generate_response(query)}", end="\n\n")
         # print(llm.generate_rag_text(query))
+
+elif answer["run_mode"] == "conversational":
+
+    while True:
+        # Get the input
+        query = input("User: ")
+
+        # Generate the text
+        print("\n\n")
+        print(f"LLM_IC: {llm.generate_conversation_response(query)}", end="\n\n")

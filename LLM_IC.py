@@ -151,6 +151,7 @@ class LLM_IC_OPENAI:
         self.device = torch.device(device)
         self.embeddings_path = embeddings_path
         self.model = model
+        self.messages = []
 
         # Load the json file
         with open(embeddings_path, "r", encoding="utf-8") as f:
@@ -247,3 +248,27 @@ class LLM_IC_OPENAI:
             model=model, messages=messages, stream=True
         )
         return response
+
+    def generate_full_conversation_text(self):
+        full_text = ""
+        for message in self.messages:
+            full_text += f"{message['role']}: {message['content']}\n"
+        return full_text
+
+    def generate_conversation_response(self, query: str, model: str | None = None):
+        if model is None:
+            model = self.model
+        rag_context = self.generate_rag_text(query)
+        messages_interation = [
+            {"role": "system", "content": rag_context},
+            {"role": "user", "content": query},
+        ]
+        self.messages.extend(messages_interation)
+        # Get OPENAI_API_KEY from the environment
+        response = self.client.chat.completions.create(
+            model=model,
+            messages=self.messages,
+        )
+        response_message = response.choices[0].message.content
+        self.messages.append({"role": "assistant", "content": response_message})
+        return response_message
