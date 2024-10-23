@@ -12,6 +12,8 @@ def get_summary_dict(path: str):
     if not os.path.exists(path):
         raise FileNotFoundError(f"The file {path} does not exist.")
 
+    canceled = False
+
     # Step 3: Open the PDF file
     doc = fitz.open(path)
 
@@ -134,6 +136,14 @@ def get_summary_dict(path: str):
 
     root.bind("<KeyPress>", on_key_press)
 
+    # If the user closes the window, set the canceled flag to True
+    def on_closing():
+        nonlocal canceled
+        canceled = True
+        root.quit()
+
+    root.protocol("WM_DELETE_WINDOW", on_closing)
+
     # Start the Tkinter event loop
     root.mainloop()
 
@@ -145,19 +155,22 @@ def get_summary_dict(path: str):
     ]
 
     # Based on the selected chapters and topics, create a summary dictionary
-    summary_dict = {}
-    current_chapter = None
-    for item in toc:
-        if item[1] in selected_chapters:
-            summary_dict[item[1]] = {"Page": item[0], "topics": []}
-            current_chapter = item[1]
-        else:
-            if current_chapter is not None:
-                summary_dict[current_chapter]["topics"].append(
-                    {"Page": item[0], "Topic": item[1]}
-                )
+    if canceled:
+        return None
+    else:
+        summary_dict = {}
+        current_chapter = None
+        for item in toc:
+            if item[1] in selected_chapters:
+                summary_dict[item[1]] = {"Page": item[0], "topics": []}
+                current_chapter = item[1]
+            else:
+                if current_chapter is not None:
+                    summary_dict[current_chapter]["topics"].append(
+                        {"Page": item[0], "Topic": item[1]}
+                    )
 
-    return summary_dict
+        return summary_dict
 
 
 summary_dict = get_summary_dict(PATH)
