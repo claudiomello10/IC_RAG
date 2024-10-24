@@ -76,7 +76,6 @@ class LLM_IC:
                 embedding_list.append(
                     {
                         "Chapter": item["Chapter"],
-                        "Title": item["Title"],
                         "Text": item["Text"],
                         "Embedding": np.array(item["Embedding"]),
                         "Topic": item["Topic"],
@@ -172,7 +171,7 @@ class LLM_IC:
         """
         retrieval_count = 1
         for index, row in search_results.iterrows():
-            rag_text += f"Retriaval {retrieval_count}: From Chapter {row['Chapter']} - {row['Title']} - Section: {row['Topic']}\n{row['Text']}\n\n"
+            rag_text += f"Retriaval {retrieval_count}: From Chapter {row['Chapter']} - Section: {row['Topic']}\n{row['Text']}\n\n"
             retrieval_count += 1
         return rag_text
 
