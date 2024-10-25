@@ -79,6 +79,7 @@ class LLM_IC:
                         "Text": item["Text"],
                         "Embedding": np.array(item["Embedding"]),
                         "Topic": item["Topic"],
+                        "Book": item["Book"],
                     }
                 )
 
@@ -162,16 +163,19 @@ class LLM_IC:
         """
         search_results = self.search(query, top_k)
         rag_text = """You are an assistant helping a student to study machine learning.
-        The student asks you a question and you provide an answer with a citation to the book "Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow" by Aurélien Géron.
+        The student asks you a question and you provide an answer and a citation to the books from the retrieval-augmented generation (RAG) context, give the names chapters and sections of the books that should help him.
+        When giving him the name of the book, you should provide the full name of the book.
+        When giving him the name of the chapter, you should provide the full name of the chapter.
+        When giving him the name of the section, you should provide the full name of the section.
         The citation should include the chapter and section of the book that was used to generate the answer.
-        If the question is about a specific topic in the book, cite the chapter and section that defines the topic.
+        If the question is about a specific topic in the books, cite the chapter and section that defines the topic.
         If the student asks you a question that requires mathematical calculations do not provide the answer, provide only the method to solve the problem step by step, and instruct him where to find the solution in the book.
-        Here is the context for the user query retrieved from the book:
+        Here is the context for the user query retrieved from the books:
 
         """
         retrieval_count = 1
         for index, row in search_results.iterrows():
-            rag_text += f"Retriaval {retrieval_count}: From Chapter {row['Chapter']} - Section: {row['Topic']}\n{row['Text']}\n\n"
+            rag_text += f"Retriaval {retrieval_count}: From Book {row['Book']} - From Chapter {row['Chapter']} - Section: {row['Topic']}\n{row['Text']}\n\n"
             retrieval_count += 1
         return rag_text
 
