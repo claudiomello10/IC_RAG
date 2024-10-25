@@ -129,6 +129,9 @@ def get_summary_dict(path: str):
 
     # Based on the selected chapters and topics, create a summary dictionary
     if canceled:
+        # Close the PDF document
+        doc.close()
+
         return None
     else:
         summary_list = []
@@ -165,10 +168,16 @@ def get_summary_dict(path: str):
                     }
                 )
 
+        # Close the PDF document
+        doc.close()
+
         return summary_list, training_list
 
 
 def get_chunks(path: str, chunk_size: int = 3000):
+
+    # Get book name
+    book_name = os.path.basename(path)
 
     # Get the summary dictionary
     summary_list, training_list = get_summary_dict(path)
@@ -200,6 +209,7 @@ def get_chunks(path: str, chunk_size: int = 3000):
             text = text.encode("utf-8", errors="ignore").decode("utf-8")
             full_df = full_df._append(
                 {
+                    "Book": book_name,
                     "Chapter": title,
                     "Text": text,
                     "Topic": "Chapter Introduction",
@@ -244,6 +254,7 @@ def get_chunks(path: str, chunk_size: int = 3000):
                 text = text.encode("utf-8", errors="ignore").decode("utf-8")
                 full_df = full_df._append(
                     {
+                        "Book": book_name,
                         "Chapter": title,
                         "Text": text,
                         "Topic": topic_title,
@@ -254,6 +265,9 @@ def get_chunks(path: str, chunk_size: int = 3000):
 
 
 def get_chunks_with_train_data(path: str, chunk_size: int = 3000):
+
+    # Get book name
+    book_name = os.path.basename(path)
 
     # Get the summary dictionary
     summary_list, training_list = get_summary_dict(path)
@@ -287,6 +301,7 @@ def get_chunks_with_train_data(path: str, chunk_size: int = 3000):
             text = text.encode("utf-8", errors="ignore").decode("utf-8")
             full_df = full_df._append(
                 {
+                    "Book": book_name,
                     "Chapter": title,
                     "Text": text,
                     "Topic": "Chapter Introduction",
@@ -331,10 +346,14 @@ def get_chunks_with_train_data(path: str, chunk_size: int = 3000):
                 text = text.encode("utf-8", errors="ignore").decode("utf-8")
                 full_df = full_df._append(
                     {
+                        "Book": book_name,
                         "Chapter": title,
                         "Text": text,
                         "Topic": topic_title,
                     },
                     ignore_index=True,
                 )
+    # Close the PDF document
+    reader.close()
+
     return full_df, training_df
