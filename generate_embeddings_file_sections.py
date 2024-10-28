@@ -44,13 +44,10 @@ def generate_chunks_Aurelien(
             if re.match(r"^\d+\.", line):
                 chapter = re.findall(r"^\d+\.", line)[0]
                 chapter = int(chapter[:-1])
-                title = re.sub(r"^\d+\.", "", line)
+                title = line
                 # Get the page at the end of the chapter name
                 page = re.findall(r"\d+$", title)[0]
                 page = int(page)
-
-                # Remove the dots from the title
-                title = re.sub(r"\.", "", title)
 
                 # Remove the page number from the title
                 title = re.sub(r"\d+$", "", title)
@@ -76,7 +73,7 @@ def generate_chunks_Aurelien(
     # Get the text from all the chapters and save it to a df
 
     text_splitter = NLTKTextSplitter(chunk_size=CHUNK_SIZE, separator="\n")
-    full_df = pd.DataFrame(columns=["Chapter", "Title", "Text", "Topic"])
+    full_df = pd.DataFrame(columns=["Chapter", "Text", "Topic"])
 
     page_correction = 25
 
@@ -100,8 +97,7 @@ def generate_chunks_Aurelien(
             text = text.encode("utf-8", errors="ignore").decode("utf-8")
             full_df = full_df._append(
                 {
-                    "Chapter": chapter,
-                    "Title": title,
+                    "Chapter": title,
                     "Text": text,
                     "Topic": "Chapter Introduction",
                 },
@@ -149,8 +145,7 @@ def generate_chunks_Aurelien(
                 text = text.encode("utf-8", errors="ignore").decode("utf-8")
                 full_df = full_df._append(
                     {
-                        "Chapter": chapter,
-                        "Title": title,
+                        "Chapter": title,
                         "Text": text,
                         "Topic": topic_title,
                     },
