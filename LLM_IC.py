@@ -40,7 +40,7 @@ class LLM_IC:
 
     def __init__(
         self,
-        embeddings_path: str,
+        embeddings_paths: list,
         device: str = None,
         embeddings_model: str = "BAAI/bge-large-en",
         model: str = "gpt-4o-mini",
@@ -57,21 +57,16 @@ class LLM_IC:
         """
 
         # Raise error if the embeddings path does not exist
-        if not os.path.exists(embeddings_path):
-            raise FileNotFoundError(f"Embeddings file not found at {embeddings_path}")
-        if device is None:
-            device = "cuda" if torch.cuda.is_available() else "cpu"
-        self.device = torch.device(device)
-        self.embeddings_path = embeddings_path
-        self.model = model
-        self.messages = []
-
-        # Load the json file
-        try:
+        embedding_list = []
+        for embeddings_path in embeddings_paths:
+            if not os.path.exists(embeddings_path):
+                raise FileNotFoundError(
+                    f"Embeddings file not found at {embeddings_path}"
+                )
             with open(embeddings_path, "r", encoding="utf-8") as f:
                 data = json.load(f)
             # Create a list of dictionaries
-            embedding_list = []
+
             for item in data:
                 embedding_list.append(
                     {
@@ -82,6 +77,16 @@ class LLM_IC:
                         "Book": item["Book"],
                     }
                 )
+
+        if device is None:
+            device = "cuda" if torch.cuda.is_available() else "cpu"
+        self.device = torch.device(device)
+        self.embeddings_path = embeddings_path
+        self.model = model
+        self.messages = []
+
+        # Load the json file
+        try:
 
             # Create a dataframe
             self.embedding_df = pd.DataFrame(embedding_list)

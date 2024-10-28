@@ -27,5 +27,10 @@ embedding_model = SentenceTransformer("BAAI/bge-large-en", device=device)
 print("Creating embeddings for the chunks")
 df["Embedding"] = df["Text"].progress_apply(lambda x: embedding_model.encode(x))
 
-print("Saving the embeddings to a file")
-df.to_json("full_df_embeddings_sections.json", orient="records")
+print("Saving the embeddings to a files")
+
+# Dvidide the dataframe into two parts
+df1 = df.iloc[: len(df) // 2]
+df2 = df.iloc[len(df) // 2 :]
+df1.to_json("full_df_embeddings_sections1.json")
+df2.to_json("full_df_embeddings_sections2.json")

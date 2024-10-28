@@ -23,7 +23,13 @@ questions = [
 
 
 # Create the LLM_IC object
-llm = LLM_IC(embeddings_path="full_df_embeddings_sections.json")
+llm = LLM_IC(
+    embeddings_paths=[
+        "full_df_embeddings_sections1.json",
+        "full_df_embeddings_sections2.json",
+    ]
+)
+
 
 # Ask the user for the mode
 answer = inquirer.prompt(questions)
