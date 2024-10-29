@@ -81,6 +81,9 @@ class ModernChatApp(ctk.CTk):
         self.grid_rowconfigure(0, weight=1)
         self.grid_columnconfigure(1, weight=1)
 
+        # Initialize conversation mode
+        self.conversation_mode = False
+
         # Create main layout
         self.create_sidebar()
         self.create_main_chat()
@@ -116,15 +119,30 @@ class ModernChatApp(ctk.CTk):
         )
         self.appearance_mode_menu.grid(row=1, column=0, padx=20, pady=10)
 
+        # Conversation mode switch
+        self.conversation_switch = ctk.CTkSwitch(
+            sidebar,
+            text="Conversation Mode",
+            command=self.toggle_conversation_mode,
+            onvalue=True,
+            offvalue=False,
+        )
+        self.conversation_switch.grid(row=2, column=0, padx=20, pady=10)
+
         # Clear chat button
         clear_button = ctk.CTkButton(
             sidebar, text="Clear Chat", command=self.clear_chat
         )
-        clear_button.grid(row=2, column=0, padx=20, pady=10)
+        clear_button.grid(row=3, column=0, padx=20, pady=10)
 
         # Version info at bottom
         version_label = ctk.CTkLabel(sidebar, text="v0.1.0", text_color="gray")
         version_label.grid(row=5, column=0, padx=20, pady=(10, 20))
+
+    def toggle_conversation_mode(self):
+        self.conversation_mode = self.conversation_switch.get()
+        if not self.conversation_mode:
+            self.clear_chat()
 
     def create_main_chat(self):
         # Create main chat frame
@@ -143,7 +161,7 @@ class ModernChatApp(ctk.CTk):
         input_frame.grid_columnconfigure(0, weight=1)
 
         # Create input field
-        self.input_field = ctk.CTkTextbox(input_frame, height=40, corner_radius=10)
+        self.input_field = ctk.CTkTextbox(input_frame, height=160, corner_radius=10)
         self.input_field.grid(row=0, column=0, sticky="ew", padx=(0, 10))
 
         # Create send button
@@ -179,14 +197,21 @@ class ModernChatApp(ctk.CTk):
             self.chat_display.add_message("")  # Add empty message for streaming
             ai_response = ""
 
-            # Get AI response
+            # Get AI response based on conversation mode
             try:
-                response = self.llm.generate_response_stream(message)
-                for r in response:
-                    if r.choices[0].delta.content is not None:
-                        ai_response += r.choices[0].delta.content
-                        self.chat_display.update_last_message(ai_response)
-                        self.update()
+                if self.conversation_mode:
+                    # Use conversation-aware response
+                    response = self.llm.generate_response_conversation(message)
+                    ai_response = response
+                    self.chat_display.update_last_message(ai_response)
+                else:
+                    # Use standard streaming response
+                    response = self.llm.generate_response_stream(message)
+                    for r in response:
+                        if r.choices[0].delta.content is not None:
+                            ai_response += r.choices[0].delta.content
+                            self.chat_display.update_last_message(ai_response)
+                            self.update()
             except Exception as e:
                 self.chat_display.update_last_message(f"Error: {str(e)}")
             finally:
@@ -200,6 +225,8 @@ class ModernChatApp(ctk.CTk):
             widget.destroy()
         self.chat_display.message_widgets.clear()
         self.chat_display.streaming_label = None
+        # Reset conversation history when clearing chat
+        self.llm.messages = []
 
     def change_appearance_mode(self, mode: str):
         ctk.set_appearance_mode(mode.lower())
