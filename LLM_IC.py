@@ -3,7 +3,6 @@ import faiss
 import torch
 import numpy as np
 from sentence_transformers import SentenceTransformer
-from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 import ujson as json
 from openai import OpenAI
 import os
