@@ -42,7 +42,7 @@ class LLM_IC:
         self,
         embeddings_paths: list,
         device: str = None,
-        embeddings_model: str = "BAAI/bge-large-en",
+        embeddings_model: str = "jinaai/jina-embeddings-v3",
         model: str = "gpt-4o-mini",
     ):
         """
@@ -96,7 +96,9 @@ class LLM_IC:
         # Load the embeddings model
         try:
             print("Loading the embeddings model")
-            self.embeddings_model = SentenceTransformer(embeddings_model, device=device)
+            self.embeddings_model = SentenceTransformer(
+                embeddings_model, device=device, trust_remote_code=True
+            )
             print("Embeddings model loaded")
         except Exception as e:
             print(f"Error loading the embeddings model: {e}")
@@ -104,10 +106,10 @@ class LLM_IC:
         # Create a faiss index
         try:
             # Get the embeddings dimension
-            embeddings_dimension = self.embedding_df["Embedding"][0].shape[0]
+            embeddings_dimension = np.array(self.embedding_df["Embedding"][0]).shape[0]
 
             # Create a faiss index
-            self.faiss_index = faiss.IndexFlatL2(embeddings_dimension)
+            self.faiss_index = faiss.IndexFlatIP(embeddings_dimension)
 
             # Add the embeddings to the index
             embeddings = np.array(self.embedding_df["Embedding"].to_list())
@@ -145,7 +147,10 @@ class LLM_IC:
         Returns:
             np.array: The embeddings for the query.
         """
-        return self.embeddings_model.encode(query)
+
+        embeddings = self.embeddings_model.encode(query)
+        embeddings = np.array(embeddings)
+        return embeddings
 
     def decode(self, embedding: np.array):
         """ "
