@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ic-chatbot"
+version = "0.1.0"
+description = "An intelligent chatbot using RAG for machine learning education"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = [
+    "customtkinter",
+    "openai",
+    "pandas",
+    "faiss-cpu",  # Use faiss-gpu if you need GPU support
+    "torch",
+    "sentence-transformers",
+    "numpy",
+    "ujson",
+    "transformers",
+]
+
+[project.scripts]
+ic-chatbot = "ic_chatbot.main:ModernChatApp"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ic_chatbot*"]
+
+[tool.setuptools.package-data]
+ic_chatbot = [
+    "*.json",  # Include JSON embedding files
+]
+
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3

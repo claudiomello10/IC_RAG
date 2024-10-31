@@ -1,0 +1,2 @@
+[console_scripts]
+ic-chatbot = ic_chatbot.main:ModernChatApp
