@@ -3,13 +3,13 @@ from transformers import pipeline
 
 # Step 1: Choose a PDF file
 
-#PATH = "Livros/Futuros/MachineLearning/2024_Python_Deep_Learning_w_pacc21.pdf" # -- bom
-#PATH = "Livros/Futuros/MachineLearning/2019_Book_EmbeddedDeepLearning.pdf" #bom
-#PATH = "Livros/Futuros/MachineLearning/2018_Book_DeepLearningWithAzure.pdf" # hmm mutchu bom
-PATH = "Livros/Futuros/MachineLearning/2018_Book_DeepLearningWithApplicationsUsingPython.pdf"# very good rebecca
-#PATH = "Livros/Futuros/MachineLearning/2017_Book_DeepLearningWithPython.pdf" #hmmm thats right
-#PATH = "Livros/Futuros/MachineLearning/2017_Book_ProDeepLearningWithTensorFlow.pdf" # oh yeah
-#PATH = "/home/rebecca/IC_RAG/Livros/Futuros/MachineLearning/Adrian Rosebrock-Deep Learning for Computer Vision with Python. 2-Practitioner Bundle-PyImageSearch (2017).pdf" #well done!
+#PATH = "Livros/Futuros/MachineLearning/2024_Python_Deep_Learning_w_pacc21.pdf" 
+#PATH = "Livros/Futuros/MachineLearning/2019_Book_EmbeddedDeepLearning.pdf"
+#PATH = "Livros/Futuros/MachineLearning/2018_Book_DeepLearningWithAzure.pdf"
+PATH = "Livros/Futuros/MachineLearning/2018_Book_DeepLearningWithApplicationsUsingPython.pdf"
+#PATH = "Livros/Futuros/MachineLearning/2017_Book_DeepLearningWithPython.pdf" 
+#PATH = "Livros/Futuros/MachineLearning/2017_Book_ProDeepLearningWithTensorFlow.pdf" 
+#PATH = "/home/rebecca/IC_RAG/Livros/Futuros/MachineLearning/Adrian Rosebrock-Deep Learning for Computer Vision with Python. 2-Practitioner Bundle-PyImageSearch (2017).pdf"
 #PATH = "Livros/Futuros/MachineLearning/2022_Aurélien Géron - Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow_ Concepts, Tools, and Techniques to Build Intelligent Systems-O'Reilly Media (2022).pdf"
 #PATH = "Livros/Futuros/MachineLearning/François Chollet-Deep Learning with Python-Manning (2018).pdf"
 #PATH = "Livros/Futuros/MachineLearning/Sebastian Raschka-Python Machine Learning-Packt Publishing (2015).pdf"
@@ -17,7 +17,7 @@ PATH = "Livros/Futuros/MachineLearning/2018_Book_DeepLearningWithApplicationsUsi
 #PATH = "Livros/Futuros/MachineLearning/2015_machine_learning_a_bayesian_perspective.pdf"
 #PATH = "Livros/Futuros/MachineLearning/2018_Aggarwal_NeuralNetworksAndDeepLearning.pdf"
 #PATH = "Livros/Futuros/MachineLearning/2022_Chuo_Convex Optimization for Machine Learning.pdf"
-#PATH = "Livros/Futuros/MachineLearning/Adrian Rosebrock-Deep Learning for Computer Vision with Python. 2-Practitioner Bundle-PyImageSearch (2017).pdf" #well done!
+#PATH = "Livros/Futuros/MachineLearning/Adrian Rosebrock-Deep Learning for Computer Vision with Python. 2-Practitioner Bundle-PyImageSearch (2017).pdf"
 #PATH = "Livros/Futuros/MachineLearning/Adrian Rosebrock-Deep Learning for Computer Vision with Python. 3-ImageNetBundle-PyImageSearch (2017).pdf"
 #PATH = "Livros/Futuros/MachineLearning/Adrian Rosebrock-Deep Learning for Computer Vision with Python. 1,Starter Bundle-PyImageSearch (2017).pdf"
 
@@ -62,7 +62,7 @@ for title in sub_section:
     output = zeroshot_classifier(strings, candidate_labels2, hypothesis_template=hypothesis_template, multi_label=False)
     output = output[0]
     for label, score in zip(output['labels'], output['scores']):
-        if label == "Main chapter" and score > 0.10: 
+        if label == "Main chapter" and score > 0.20: 
             print(f' Subtitle: {strings},  Class: {label}, Score: {score:.2f}')  
 
 
