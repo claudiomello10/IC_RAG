@@ -1,0 +1,15 @@
+pypdf
+pandas
+tqdm
+PyMuPDF
+langchain
+sentence-transformers
+torch
+faiss-cpu
+customtkinter
+openai
+nltk
+ujson
+numpy
+transformers
+tiktoken
