@@ -15,18 +15,21 @@ A Retrieval-Augmented Generation (RAG) system designed to help students study ma
 If you want to quickly run the project without processing the books yourself:
 
 1. Clone the repository:
+
 ```bash
 git clone [your-repository-url]
 cd [repository-name]
 ```
 
 2. Create and activate a virtual environment:
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 ```
 
 3. Install required dependencies:
+
 ```bash
 # Note: faiss-gpu is available but not recommended for this project
 # It takes longer to compile and the performance difference is minimal for queries
@@ -36,12 +39,14 @@ pip install -r requirements.txt
 ```
 
 4. Set up your OpenAI API key:
+
 ```bash
 export OPENAI_API_KEY='your-api-key-here'  # On Unix/MacOS
 set OPENAI_API_KEY='your-api-key-here'     # On Windows
 ```
 
 5. Run the application:
+
 ```bash
 python UI_app_v0.1.0.py
 ```
@@ -55,16 +60,18 @@ If you want to process the books yourself or add new books to the system, follow
 ### 1. Download and Process Books
 
 1. Download the machine learning textbooks:
+
    - Access the books from: [ML Books Google Drive](https://drive.google.com/file/d/1_mYgjK9-vnYD68pHgPie9K8FmYaB9Lzy/view?usp=sharing)
    - Extract the downloaded file
    - Place the books in a directory named `Livros/All` in your project folder
-
 2. Process the books:
+
 ```bash
 python index_all_books.py
 ```
 
 3. Generate embeddings:
+
 ```bash
 python generate_embeddings_from_csv.py
 ```
@@ -89,15 +96,15 @@ This will create new embedding files that will replace the existing ones.
 ### Note on FAISS Installation
 
 - **Recommended**: Use `faiss-cpu` for this project
+
   - Quick to install
   - Sufficient performance for querying the existing embeddings
   - No compilation required
-
 - **Optional**: Use `faiss-gpu` only if:
+
   - You're processing a very large number of new books
   - You have a compatible GPU
   - You're willing to wait for the longer compilation time
-  - The performance improvement for regular queries will be minimal
 
 ## Project Structure
 
@@ -139,10 +146,6 @@ This will create new embedding files that will replace the existing ones.
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## License
-
-[Your chosen license]
 
 ## Acknowledgments
 
