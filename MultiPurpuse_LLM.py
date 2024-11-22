@@ -12,38 +12,55 @@ from langchain.text_splitter import NLTKTextSplitter
 from tqdm import tqdm
 
 
-class LLM_IC:
+class StudentHelper:
     """
-    LLM_IC class for handling language model interactions and retrieval-augmented generation (RAG).
+    The StudentHelper class provides a set of methods to help students study and learn from books.
+    The class uses a combination of embeddings and language models to provide answers to student questions.
+    The class can be used to generate embeddings from text data, create a FAISS index, search for similar embeddings,
+    generate retrieval-augmented generation (RAG) text, and generate responses to student questions.
+
     Attributes:
-        device (torch.device): The device to run the model on (CPU or GPU).
-        embeddings_path (str): Path to the embeddings file.
-        model (str): The language model to use.
-        messages (list): List to store messages.
-        embedding_df (pd.DataFrame): DataFrame containing the embeddings and related information.
-        embeddings_model (SentenceTransformer): The embeddings model.
-        faiss_index (faiss.IndexFlatL2): The FAISS index for similarity search.
-        client (OpenAI): The OpenAI client for generating responses.
+    device (str): The device to run the model on (CPU or GPU).
+    embeddings_model (str): The SentenceTransformer model to use for generating embeddings.
+    model (str): The language model to use for generating responses.
+    messages (list): The list of messages in the conversation.
+    embeddings_path (str): The path to the embeddings file.
+    embedding_df (pd.DataFrame): The DataFrame containing the text data with embeddings.
+    faiss_index (faiss.IndexFlatIP): The FAISS index for the embeddings.
+
     Methods:
-        __init__(embeddings_path: str, device: str = None, embeddings_model: str = "BAAI/bge-large-en", model: str = "gpt-4o-mini"):
-            Initializes the LLM_IC class with the given parameters and loads the embeddings and models.
-        search(query: str, top_k: int = 5):
-            Searches for the top_k most similar embeddings to the query and returns the corresponding DataFrame rows.
-        generate_embeddings(query: str):
-            Generates embeddings for the given query using the embeddings model.
-        decode(embedding: np.array):
-            Decodes the given embedding back to text using the embeddings model.
-        generate_rag_text(query: str, top_k: int = 5):
-            Generates a retrieval-augmented generation (RAG) text based on the query and top_k search results.
-        generate_response(query: str, model: str | None = None):
-            Generates a response to the query using the language model and RAG context.
-        generate_response_stream(query: str, model: str | None = None):
-            Generates a streaming response to the query using the language model and RAG context.
+    load_embeddings(embeddings_path: str): Load the embeddings DataFrame from a file.
+    create_faiss_index(): Create a FAISS index from the embeddings DataFrame.
+    save_embeddings(embeddings_path: str): Save the embeddings DataFrame to a file.
+    create_faiss_index_from_embeddings_file(embeddings_path: str): Create a FAISS index from the embeddings file.
+    update_faiss_index(): Update the FAISS index with the given embeddings.
+    search(query: str, top_k: int = 5): Search for the top_k most similar embeddings to the query and return the corresponding DataFrame rows.
+    generate_embeddings(query: str): Generate embeddings for the given query using the embeddings model.
+    decode(embedding: np.array): Decode the given embedding back to text using the embeddings model.
+    generate_rag_text(query: str, top_k: int = 5): Generate a retrieval-augmented
+    generation (RAG) text based on the query and top_k search results.
+    generate_response(query: str, model: str | None = None): Generate a response to the query using the language model and RAG context.
+    generate_response_conversation(query: str, model: str | None = None): Generate a response to the query using the language model, RAG context, and conversation history.
+    generate_response_stream(query: str, model: str | None = None): Generate a streaming response to the query using the language model and RAG context.
+    get_table_of_contents_from_PDF(path: str): Get the table of contents (TOC) from a PDF file.
+    get_processed_name(name: str): Returns the processed name by making it lowercase, removing leading and trailing spaces, removing sequences of spaces and newlines.
+    generate_toc_text_for_prompting(toc: list, book_name: str): Generate a prompt text from the table of contents (TOC).
+    get_model_answer_of_chapters(toc_prompt: str, model: str): Get the model answer of chapters from the table of contents.
+    get_summary_list_from_PDF(path: str, book_name=None): Get the summary list from a PDF file.
+    get_chunks_df_from_PDF(path: str, book_name=None, chunk_size=3000): Get the chunks DataFrame from a PDF file.
+    get_embeddings_df(df: pd.DataFrame): Get the embeddings DataFrame from the given DataFrame.
+    get_embeddings_df_from_PDF(path: str, book_name=None, chunk_size=3000): Get the embeddings DataFrame from the given PDF file.
+    get_chunks_for_multiple_PDFs(paths: list, book_names: list = None, chunk_size=3000): Get the text chunks for multiple PDF files.
+    get_embeddings_df_from_multiple_PDFs(paths: list, book_names: list = None, chunk_size=3000): Get the embeddings DataFrame for multiple PDF files.
+    set_embeddings_df(df: pd.DataFrame): Set the embeddings DataFrame.
+    set_embeddings_df_from_PDF(path: str, book_name=None, chunk_size=3000, update_index=True): Set the embeddings DataFrame from the given PDF file.
+    set_embeddings_df_from_multiple_PDFs(paths: list, book_names: list = None, chunk_size=3000, update_index=True): Set the embeddings DataFrame for multiple PDF files.
+    add_PDF_to_embeddings_df(path: str, book_name=None, chunk_size=3000, update_index=True): Add the text data from the given PDF file to the embeddings DataFrame.
+    add_multiple_PDFs_to_embeddings_df(paths: list, book_names: list = None, chunk_size=3000, update_index=True): Add the text data from multiple PDF files to the embeddings DataFrame.
     """
 
     def __init__(
         self,
-        embeddings_paths: list,
         device: str = None,
         embeddings_model: str = "jinaai/jina-embeddings-v3",
         model: str = "gpt-4o-mini",
@@ -51,50 +68,19 @@ class LLM_IC:
         """
         Initializes the LLM_IC class with the given parameters and loads the embeddings and models.
         Args:
-            embeddings_path (str): Path to the embeddings file.
             device (str): The device to run the model on (CPU or GPU).
             embeddings_model (str): The SentenceTransformer model to use for generating embeddings.
             model (str): The language model to use for generating responses.
         Returns:
-            LLM_IC object.
+            StudentHelper object.
         """
-
-        # Raise error if the embeddings path does not exist
-        embedding_list = []
-        for embeddings_path in embeddings_paths:
-            if not os.path.exists(embeddings_path):
-                raise FileNotFoundError(
-                    f"Embeddings file not found at {embeddings_path}"
-                )
-            with open(embeddings_path, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            # Create a list of dictionaries
-
-            for item in data:
-                embedding_list.append(
-                    {
-                        "Chapter": item["Chapter"],
-                        "Text": item["Text"],
-                        "Embedding": np.array(item["Embedding"]),
-                        "Topic": item["Topic"],
-                        "Book": item["Book"],
-                    }
-                )
 
         if device is None:
             device = "cuda" if torch.cuda.is_available() else "cpu"
         self.device = torch.device(device)
-        self.embeddings_path = embeddings_path
+
         self.model = model
         self.messages = []
-
-        # Load the json file
-        try:
-
-            # Create a dataframe
-            self.embedding_df = pd.DataFrame(embedding_list)
-        except Exception as e:
-            print(f"Error loading the embeddings file: {e}")
 
         # Load the embeddings model
         try:
@@ -106,27 +92,109 @@ class LLM_IC:
         except Exception as e:
             print(f"Error loading the embeddings model: {e}")
 
-        # Create a faiss index
+        self.client = OpenAI()
+
+    def set_subject(self, subject: str):
+        """
+        Set the subject for the student helper.
+        Args:
+            subject (str): The subject to set.
+        """
+        self.subject = subject
+
+    def load_embeddings(self, embeddings_path: str):
+
         try:
-            # Get the embeddings dimension
-            embeddings_dimension = np.array(self.embedding_df["Embedding"][0]).shape[0]
+            if embeddings_path:
+                # Raise error if the embeddings path does not exist
+                embedding_list = []
 
+                if not os.path.exists(embeddings_path):
+                    raise FileNotFoundError(
+                        f"Embeddings file not found at {embeddings_path}"
+                    )
+                with open(embeddings_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                # Create a list of dictionaries
+
+                for item in data:
+                    embedding_list.append(
+                        {
+                            "Chapter": item["Chapter"],
+                            "Text": item["Text"],
+                            "Embedding": np.array(item["Embedding"]),
+                            "Topic": item["Topic"],
+                            "Book": item["Book"],
+                        }
+                    )
+
+            self.embeddings_path = embeddings_path
+            # Create a dataframe
+            self.embedding_df = pd.DataFrame(embedding_list)
+            print("Embeddings loaded successfully")
+        except Exception as e:
+            raise e
+
+    def create_faiss_index(self):
+        if self.embedding_df is not None:
             # Create a faiss index
-            self.faiss_index = faiss.IndexFlatIP(embeddings_dimension)
+            try:
+                # Get the embeddings dimension
+                embeddings_dimension = np.array(
+                    self.embedding_df["Embedding"][0]
+                ).shape[0]
 
-            # Add the embeddings to the index
-            embeddings = np.array(self.embedding_df["Embedding"].to_list())
+                # Create a faiss index
+                self.faiss_index = faiss.IndexFlatIP(embeddings_dimension)
 
-            # Check if the embeddings are 1D
+                # Add the embeddings to the index
+                embeddings = np.array(self.embedding_df["Embedding"].to_list())
+
+                # Check if the embeddings are 1D
+                if embeddings.ndim == 1:
+                    embeddings = embeddings.reshape(1, -1)
+
+                # Add the embeddings to the faiss index
+                self.faiss_index.add(embeddings)
+
+            except Exception as e:
+                print(f"Error creating the faiss index: {e}")
+        else:
+            raise Exception("Embeddings DataFrame is not loaded")
+
+    def save_embeddings(self, embeddings_path: str):
+        """
+        Save the embeddings DataFrame to a file.
+        Args:
+            embeddings_path (str): The path to save the embeddings to.
+        """
+        self.embedding_df.to_json(embeddings_path, orient="records", lines=True)
+
+    def create_faiss_index_from_embeddings_file(self, embeddings_path: str):
+        """
+        Create a FAISS index from the embeddings file.
+        Args:
+            embeddings_path (str): The path to the embeddings file.
+        """
+        self.load_embeddings(embeddings_path)
+        self.create_faiss_index()
+
+    def update_faiss_index(self):
+        """
+        Update the FAISS index with the given embeddings.
+        Args:
+            embeddings (np.array): The embeddings to update the index with.
+        """
+        if hasattr(self, "faiss_index"):
+            embedding_list = self.embedding_df["Embedding"].to_list()
+            embeddings = np.array(embedding_list)
             if embeddings.ndim == 1:
                 embeddings = embeddings.reshape(1, -1)
+            self.faiss_index.add()
+            # Check if the embeddings are 1D
 
-            # Add the embeddings to the faiss index
-            self.faiss_index.add(embeddings)
-
-        except Exception as e:
-            print(f"Error creating the faiss index: {e}")
-        self.client = OpenAI()
+        else:
+            raise Exception("FAISS index not created. Please create the FAISS index.")
 
     def search(self, query: str, top_k: int = 5):
         """
@@ -137,6 +205,15 @@ class LLM_IC:
         Returns:
             pd.DataFrame: The DataFrame containing the top_k search results.
         """
+        if not hasattr(self, "faiss_index"):
+            raise Exception(
+                "FAISS index not created. Please create the FAISS index first."
+            )
+        if not hasattr(self, "embedding_df"):
+            raise Exception(
+                "Embeddings DataFrame not loaded. Please load the embeddings first."
+            )
+
         query_embedding = self.generate_embeddings(query)
         query_embedding = query_embedding.reshape(1, -1)
         _, indices = self.faiss_index.search(query_embedding, top_k)
@@ -174,8 +251,22 @@ class LLM_IC:
         Returns:
             str: The RAG text generated based on the query and search results.
         """
+        if not hasattr(self, "faiss_index"):
+            raise Exception(
+                "FAISS index not created. Please create the FAISS index first."
+            )
+        if not hasattr(self, "embedding_df"):
+            raise Exception(
+                "Embeddings DataFrame not loaded. Please load the embeddings first."
+            )
+
         search_results = self.search(query, top_k)
-        rag_text = """You are an assistant helping a student to study machine learning.
+
+        # Verify if there is a subject
+        if not hasattr(self, "subject"):
+            self.subject = ""
+
+        rag_text = f"""You are an assistant helping a student to study {self.subject}.
         The student asks you a question and you provide an answer and a citation to the books from the retrieval-augmented generation (RAG) context, give the names chapters and sections of the books that should help him.
         When giving him the name of the book, you should provide the full name of the book.
         When giving him the name of the chapter, you should provide the full name of the chapter.
@@ -201,6 +292,15 @@ class LLM_IC:
         Returns:
             str: The response generated by the language model.
         """
+        if not hasattr(self, "faiss_index"):
+            raise Exception(
+                "FAISS index not created. Please create the FAISS index first."
+            )
+        if not hasattr(self, "embedding_df"):
+            raise Exception(
+                "Embeddings DataFrame not loaded. Please load the embeddings first."
+            )
+
         if model is None:
             model = self.model
         rag_context = self.generate_rag_text(query)
@@ -224,6 +324,15 @@ class LLM_IC:
         Returns:
             str: The response generated by the language model.
         """
+        if not hasattr(self, "faiss_index"):
+            raise Exception(
+                "FAISS index not created. Please create the FAISS index first."
+            )
+        if not hasattr(self, "embedding_df"):
+            raise Exception(
+                "Embeddings DataFrame not loaded. Please load the embeddings first."
+            )
+
         if model is None:
             model = self.model
         rag_context = self.generate_rag_text(query)
@@ -249,6 +358,16 @@ class LLM_IC:
         Returns:
             response: The streaming response generated by the language model.
         """
+
+        if not hasattr(self, "faiss_index"):
+            raise Exception(
+                "FAISS index not created. Please create the FAISS index first."
+            )
+        if not hasattr(self, "embedding_df"):
+            raise Exception(
+                "Embeddings DataFrame not loaded. Please load the embeddings first."
+            )
+
         if model is None:
             model = self.model
         rag_context = self.generate_rag_text(query)
@@ -442,7 +561,12 @@ class LLM_IC:
 
         full_df = pd.DataFrame(columns=["Chapter", "Text", "Topic"])
 
-        for index, chapter in tqdm(enumerate(summary_list)):
+        for index, chapter in tqdm(
+            enumerate(summary_list),
+            desc=f"Processing chapters of book: {book_name}",
+            total=len(summary_list),
+            unit="chapter",
+        ):
             title = chapter["Title"]
             chapter_page = chapter["Page"] - 1
             topics = chapter["topics"]
@@ -525,7 +649,9 @@ class LLM_IC:
             pd.DataFrame: The DataFrame containing the text data with embeddings.
         """
         embeddings_list = []
-        for index, row in df.iterrows():
+        embedding_pb = tqdm(df.iterrows(), desc="Generating embeddings", total=len(df))
+
+        for index, row in embedding_pb:
             text = row["Text"]
             embedding = self.generate_embeddings(text)
             embeddings_list.append(
@@ -569,11 +695,14 @@ class LLM_IC:
             pd.DataFrame: The DataFrame containing the text data with embeddings.
         """
         full_df = pd.DataFrame(columns=["Book", "Chapter", "Text", "Topic"])
-        for index, path in enumerate(paths):
+        pb = tqdm(enumerate(paths), desc="Processing PDFs", total=len(paths))
+        for index, path in pb:
             if book_names is not None:
                 book_name = book_names[index]
             else:
                 book_name = None
+            pb.set_description(f"Processing PDF: {book_name}")
+
             try:
                 df = self.get_chunks_df_from_PDF(path, book_name, chunk_size)
             except Exception as e:
@@ -596,3 +725,102 @@ class LLM_IC:
         """
         full_df = self.get_chunks_for_multiple_PDFs(paths, book_names, chunk_size)
         return self.get_embeddings_df(full_df)
+
+    def set_embeddings_df(self, df: pd.DataFrame):
+        """
+        Set the embeddings DataFrame.
+        Args:
+            df (pd.DataFrame): The DataFrame containing the text data with embeddings.
+        """
+        self.embedding_df = df
+
+    def set_embeddings_df_from_PDF(
+        self, path: str, book_name=None, chunk_size=3000, update_index=True
+    ):
+        """
+        Set the embeddings DataFrame from the given PDF file.
+        Args:
+            path (str): The path to the PDF file.
+            book_name (str): The name of the book.
+            chunk_size (int): The size of the text chunks to split the text into.
+        """
+        try:
+            df = self.get_chunks_df_from_PDF(path, book_name, chunk_size)
+        except Exception as e:
+            raise e
+        self.set_embeddings_df(self.get_embeddings_df(df))
+        if update_index:
+            self.create_faiss_index()
+
+    def set_embeddings_df_from_multiple_PDFs(
+        self, paths: list, book_names: list = None, chunk_size=3000, update_index=True
+    ):
+        """
+        Set the embeddings DataFrame for multiple PDF files.
+        The paths and book names should be in the same order.
+        Args:
+            paths (list): The list of paths to the PDF files.
+            book_names (list): The list of book names.
+            chunk_size (int): The size of the text chunks to split the text into.
+        """
+        full_df = self.get_chunks_for_multiple_PDFs(paths, book_names, chunk_size)
+        self.set_embeddings_df(self.get_embeddings_df(full_df))
+        if update_index:
+            self.create_faiss_index()
+
+    def add_PDF_to_embeddings_df(
+        self, path: str, book_name=None, chunk_size=3000, update_index=True
+    ):
+        """
+        Add the text data from the given PDF file to the embeddings DataFrame.
+        Args:
+            path (str): The path to the PDF file.
+            book_name (str): The name of the book.
+            chunk_size (int): The size of the text chunks to split the text into.
+        """
+        if not hasattr(self, "embedding_df"):
+            raise Exception(
+                "Embeddings DataFrame not loaded. Please load the embeddings first."
+            )
+        if not hasattr(self, "faiss_index") and update_index:
+            raise Exception(
+                "FAISS index not created. Please create the FAISS index first."
+            )
+
+        try:
+            df = self.get_chunks_df_from_PDF(path, book_name, chunk_size)
+            df_embeddings = self.get_embeddings_df(df)
+        except Exception as e:
+            raise e
+        self.embedding_df = pd.concat(
+            [self.embedding_df, df_embeddings], ignore_index=True
+        )
+        if update_index:
+            self.create_faiss_index()
+
+    def add_multiple_PDFs_to_embeddings_df(
+        self, paths: list, book_names: list = None, chunk_size=3000, update_index=True
+    ):
+        """
+        Add the text data from multiple PDF files to the embeddings DataFrame.
+        The paths and book names should be in the same order.
+        Args:
+            paths (list): The list of paths to the PDF files.
+            book_names (list): The list of book names.
+            chunk_size (int): The size of the text chunks to split the text into.
+        """
+        if not hasattr(self, "embedding_df"):
+            raise Exception(
+                "Embeddings DataFrame not loaded. Please load the embeddings first."
+            )
+        if not hasattr(self, "faiss_index") and update_index:
+            raise Exception(
+                "FAISS index not created. Please create the FAISS index first."
+            )
+        full_df = self.get_chunks_for_multiple_PDFs(paths, book_names, chunk_size)
+        df_embeddings = self.get_embeddings_df(full_df)
+        self.embedding_df = pd.concat(
+            [self.embedding_df, df_embeddings], ignore_index=True
+        )
+        if update_index:
+            self.create_faiss_index()

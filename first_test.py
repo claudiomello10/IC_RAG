@@ -1,21 +1,10 @@
-import os
-
-os.environ["TRANSFORMERS_VERBOSITY"] = "error"
-from LLM_IC import LLM_IC
-
-
-# Remove the warnings
-import warnings
-
-warnings.filterwarnings("ignore")
-
+from MultiPurpuse_LLM import StudentHelper
 
 # Create the LLM_IC object
-llm = LLM_IC(embeddings_path="full_df_embeddings.json")
+llm = StudentHelper()
 
-# Get the input
-query = input("LLM_IC: ")
-
-# Generate the text
-print(llm.generate_text_cite(query))
-# print(llm.generate_text(query))
+llm.set_embeddings_df_from_multiple_PDFs(
+    [
+        "Livros/All/2-Aurelien-Geron-Hands-On-Machine-Learning-with-Scikit-Learn-Keras-and-Tensorflow_-Concepts-Tools-and-Techniques-to-Build-Intelligent-Systems-OReilly-Media-2019.pdf"
+    ]
+)
