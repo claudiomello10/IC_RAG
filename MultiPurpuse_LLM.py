@@ -267,7 +267,7 @@ class StudentHelper:
             self.subject = ""
 
         rag_text = f"""You are an assistant helping a student to study {self.subject}.
-        The student asks you a question and you provide an answer and a citation to the books from the retrieval-augmented generation (RAG) context, give the names chapters and sections of the books that should help him.
+        The student asks you a question and you provide an answer and an indication on which books and sections from the retrieval-augmented generation (RAG) context he can learn more about the topics, give the names chapters and sections of the books that should help him.
         When giving him the name of the book, you should provide the full name of the book.
         When giving him the name of the chapter, you should provide the full name of the chapter.
         When giving him the name of the section, you should provide the full name of the section.
