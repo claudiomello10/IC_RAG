@@ -1,0 +1,852 @@
+text,label,sublabel,subject_of_interest,font
+"Onde posso encontrar informações sobre fotossíntese em livros de biologia?",searching_for_information, book_search, fotossíntese
+"Preciso de um livro que explique bem termodinâmica para engenharia",searching_for_information, book_search, termodinâmica
+"Qual capítulo do Halliday aborda movimento circular?",searching_for_information, book_search, movimento circular, Halliday
+"Estou procurando artigos científicos sobre machine learning aplicado à medicina",searching_for_information, article_search, machine learning aplicado à medicina
+"Podem me indicar um bom livro sobre história do Brasil colonial?",searching_for_information, book_search, história do Brasil colonial
+"Em qual parte do livro Gray's Anatomy posso encontrar informações sobre o sistema nervoso?",searching_for_information, book_search, sistema nervoso, Gray's Anatomy
+"Busco referências bibliográficas sobre psicologia cognitiva",searching_for_information, book_and_article_search, psicologia cognitiva
+"Onde encontro conteúdo sobre cálculo diferencial para iniciantes?",searching_for_information, book_search, cálculo diferencial
+"Preciso de indicações de livros sobre arquitetura sustentável",searching_for_information, book_search, arquitetura sustentável
+"Em qual seção do livro de química orgânica posso estudar sobre alcenos?",searching_for_information, book_search, alcenos
+"Quais são os melhores livros para aprender sobre inteligência artificial?",searching_for_information, book_search, inteligência artificial
+"Procuro material sobre metodologia científica para minha pesquisa",searching_for_information, book_and_article_search, metodologia científica
+"Onde posso encontrar informações detalhadas sobre a Revolução Francesa?",searching_for_information, book_search, Revolução Francesa
+"Quero estudar sobre redes neurais, podem me indicar alguns artigos?",searching_for_information, article_search, redes neurais
+"Em qual capítulo do livro de anatomia fala sobre o sistema digestório?",searching_for_information, book_search, sistema digestório
+"Preciso de referências sobre administração financeira",searching_for_information, book_and_article_search, administração financeira
+"Onde encontro conteúdo sobre análise de dados em Python?",searching_for_information, book_search, análise de dados em Python
+"Busco livros que abordem o tema de sustentabilidade empresarial",searching_for_information, book_search, sustentabilidade empresarial
+"Em qual parte do manual de direito civil posso estudar sobre contratos?",searching_for_information, book_search, contratos, manual de direito civil
+"Quais artigos científicos falam sobre energia renovável?",searching_for_information, article_search, energia renovável
+"Onde posso encontrar material sobre teoria dos jogos?",searching_for_information, book_and_article_search, teoria dos jogos
+"Procuro livros sobre gestão de projetos ágeis",searching_for_information, book_search, gestão de projetos ágeis
+"Em qual seção do livro de física posso estudar sobre eletromagnetismo?",searching_for_information, book_search, eletromagnetismo
+"Quais são as melhores fontes para estudar sobre genética molecular?",searching_for_information, book_search, genética molecular
+"Onde encontro conteúdo sobre arquitetura romana antiga?",searching_for_information, book_search, arquitetura romana antiga
+"Preciso de indicações de livros sobre marketing digital",searching_for_information, book_search, marketing digital
+"Em qual parte do livro de cálculo posso estudar sobre integrais?",searching_for_information, book_search, integrais, cálculo
+"Busco artigos sobre neurociência cognitiva",searching_for_information, article_search, neurociência cognitiva
+"Onde posso encontrar informações sobre geologia estrutural?",searching_for_information, book_search, geologia estrutural
+"Quais livros abordam bem o tema de economia comportamental?",searching_for_information, book_search, economia comportamental
+"Procuro material sobre desenvolvimento web fullstack",searching_for_information, book_search, desenvolvimento web fullstack
+"Em qual capítulo do livro de estatística fala sobre regressão linear?",searching_for_information, book_search, regressão linear, estatística
+"Onde encontro conteúdo sobre literatura brasileira modernista?",searching_for_information, book_search, literatura brasileira modernista
+"Preciso de referências sobre psicologia organizacional",searching_for_information, book_and_article_search, psicologia organizacional
+"Em qual parte do livro de bioquímica posso estudar sobre metabolismo?",searching_for_information, book_search, metabolismo, bioquímica
+"Quais são os melhores recursos para aprender sobre banco de dados?",searching_for_information, book_search, banco de dados
+"Onde posso encontrar informações sobre história da arte renascentista?",searching_for_information, book_search, história da arte renascentista
+"Busco livros sobre gestão de recursos humanos",searching_for_information, book_search, gestão de recursos humanos
+"Em qual seção do manual de direito penal fala sobre crimes contra a vida?",searching_for_information, book_search, crimes contra a vida, manual de direito penal
+"Procuro artigos sobre mudanças climáticas",searching_for_information, article_search, mudanças climáticas
+"Onde encontro material sobre filosofia antiga?",searching_for_information, book_search, filosofia antiga
+"Preciso de indicações de livros sobre contabilidade básica",searching_for_information, book_search, contabilidade básica
+"Em qual parte do livro de álgebra linear posso estudar sobre matrizes?",searching_for_information, book_search, matrizes, álgebra linear
+"Quais são as melhores fontes para estudar sobre imunologia?",searching_for_information, book_search, imunologia
+"Onde posso encontrar conteúdo sobre psicologia do desenvolvimento?",searching_for_information, book_search, psicologia do desenvolvimento
+"Busco referências sobre engenharia de software",searching_for_information, book_and_article_search, engenharia de software
+"Em qual capítulo do livro de química analítica fala sobre titulação?",searching_for_information, book_search, titulação, química analítica
+"Procuro material sobre história da música clássica",searching_for_information, book_search, história da música clássica
+"Onde encontro informações sobre anatomia do sistema respiratório?",searching_for_information, book_search, sistema respiratório, anatomia
+"Quais livros explicam bem mecânica quântica para iniciantes?",searching_for_information, book_search, mecânica quântica para iniciantes
+"Em qual parte do manual de direito constitucional posso estudar sobre direitos fundamentais?",searching_for_information, book_search, direitos fundamentais, manual de direito constitucional
+"Preciso de referências sobre gestão da qualidade",searching_for_information, book_and_article_search, gestão da qualidade
+"Onde posso encontrar material sobre antropologia cultural?",searching_for_information, book_search, antropologia cultural
+"Busco artigos sobre inteligência artificial em saúde",searching_for_information, article_search, inteligência artificial em saúde
+"Em qual seção do livro de microbiologia fala sobre bactérias?",searching_for_information, book_search, bactérias, microbiologia
+"Procuro conteúdo sobre história da filosofia medieval",searching_for_information, book_search, história da filosofia medieval
+"Onde encontro informações sobre estruturas de dados em computação?",searching_for_information, book_search, estruturas de dados em computação
+"Quais são as melhores fontes para estudar sobre marketing internacional?",searching_for_information, book_search, marketing internacional
+"Em qual parte do livro de geometria analítica posso estudar sobre vetores?",searching_for_information, book_search, vetores, geometria analítica
+"Preciso de indicações de livros sobre psicopatologia",searching_for_information, book_search, psicopatologia
+"Onde posso encontrar material sobre direito administrativo?",searching_for_information, book_search, direito administrativo
+"Busco referências sobre gestão ambiental",searching_for_information, book_and_article_search, gestão ambiental
+"Em qual capítulo do livro de farmacologia fala sobre anti-inflamatórios?",searching_for_information, book_search, anti-inflamatórios, farmacologia
+"Procuro artigos sobre neuropsicologia",searching_for_information, article_search, neuropsicologia
+"Onde encontro conteúdo sobre história do cinema?",searching_for_information, book_search, história do cinema
+"Quais livros abordam bem o tema de física moderna?",searching_for_information, book_search, física moderna
+"Em qual parte do manual de contabilidade posso estudar sobre balanço patrimonial?",searching_for_information, book_search, balanço patrimonial, contabilidade
+"Preciso de referências sobre linguística aplicada",searching_for_information, book_and_article_search, linguística aplicada
+"Onde posso encontrar material sobre arquitetura modernista?",searching_for_information, book_search, arquitetura modernista
+"Busco artigos sobre biotecnologia",searching_for_information, article_search, biotecnologia
+"Em qual seção do livro de anatomia fala sobre sistema cardiovascular?",searching_for_information, book_search, sistema cardiovascular, anatomia
+"Procuro conteúdo sobre história da América Latina",searching_for_information, book_search, história da América Latina
+"Onde encontro informações sobre cálculo numérico?",searching_for_information, book_search, cálculo numérico
+"Quais são as melhores fontes para estudar sobre direito tributário?",searching_for_information, book_search, direito tributário
+"Em qual parte do livro de química orgânica posso estudar sobre aromáticos?",searching_for_information, book_search, aromáticos, química orgânica
+"Preciso de indicações de livros sobre psicologia social",searching_for_information, book_search, psicologia social
+"Onde posso encontrar material sobre análise de circuitos elétricos?",searching_for_information, book_search, análise de circuitos elétricos
+"Busco referências sobre gestão estratégica",searching_for_information, book_and_article_search, gestão estratégica
+"Em qual capítulo do livro de biologia molecular fala sobre DNA?",searching_for_information, book_search, DNA, biologia molecular
+"Procuro artigos sobre desenvolvimento sustentável",searching_for_information, article_search, desenvolvimento sustentável
+"Onde encontro conteúdo sobre história da arte moderna?",searching_for_information, book_search, história da arte moderna
+"Quais livros explicam bem relatividade geral?",searching_for_information, book_search, relatividade geral
+"Em qual parte do manual de direito do trabalho posso estudar sobre rescisão contratual?",searching_for_information, book_search, rescisão contratual, direito do trabalho
+"Preciso de referências sobre análise financeira",searching_for_information, book_and_article_search, análise financeira
+"Onde posso encontrar material sobre sociologia urbana?",searching_for_information, book_search, sociologia urbana
+"Busco artigos sobre inteligência artificial em educação",searching_for_information, article_search, inteligência artificial em educação
+"Em qual seção do livro de fisiologia fala sobre sistema endócrino?",searching_for_information, book_search, sistema endócrino, fisiologia
+"Procuro conteúdo sobre história da tecnologia",searching_for_information, book_search, história da tecnologia
+"Onde encontro informações sobre análise de algoritmos?",searching_for_information, book_search, análise de algoritmos
+"Quais são as melhores fontes para estudar sobre direito empresarial?",searching_for_information, book_search, direito empresarial
+"Em qual parte do livro de ecologia posso estudar sobre ecossistemas?",searching_for_information, book_search, ecossistemas, ecologia
+"Preciso de indicações de livros sobre teoria literária",searching_for_information, book_search, teoria literária
+"Onde posso encontrar material sobre resistência dos materiais?",searching_for_information, book_search, resistência dos materiais
+"Busco referências sobre gestão de marketing",searching_for_information, book_and_article_search, gestão de marketing
+"Em qual capítulo do livro de embriologia fala sobre desenvolvimento embrionário?",searching_for_information, book_search, desenvolvimento embrionário, embriologia
+"Procuro artigos sobre psicologia experimental",searching_for_information, article_search, psicologia experimental
+"Onde encontro conteúdo sobre história da matemática?",searching_for_information, book_search, história da matemática
+"Quais livros abordam bem o tema de termodinâmica química?",searching_for_information, book_search, termodinâmica química
+"Em qual parte do manual de direito processual posso estudar sobre recursos?",searching_for_information, book_search, recursos, direito processual
+"Preciso de referências sobre gestão da inovação",searching_for_information, book_and_article_search, gestão da inovação
+"Onde posso encontrar material sobre arqueologia clássica?",searching_for_information, book_search, arqueologia clássica
+"Busco artigos sobre machine learning",searching_for_information, article_search, machine learning
+"Em qual seção do livro de histologia fala sobre tecidos?",searching_for_information, book_search, tecidos, histologia
+"Procuro conteúdo sobre história da economia",searching_for_information, book_search, história da economia
+"Onde encontro informações sobre álgebra abstrata?",searching_for_information, book_search, álgebra abstrata
+"Quais são as melhores fontes para estudar sobre direito internacional?",searching_for_information, book_search, direito internacional
+"Em qual parte do livro de bioquímica posso estudar sobre enzimas?",searching_for_information, book_search, enzimas, bioquímica
+"Preciso de indicações de livros sobre psicologia clínica",searching_for_information, book_search, psicologia clínica
+"Onde posso encontrar material sobre mecânica dos fluidos?",searching_for_information, book_search, mecânica dos fluidos
+"Busco referências sobre gestão de operações",searching_for_information, book_and_article_search, gestão de operações
+"Em qual capítulo do livro de imunologia fala sobre anticorpos?",searching_for_information, book_search, anticorpos, imunologia
+"Procuro artigos sobre desenvolvimento web",searching_for_information, article_search, desenvolvimento web
+"Onde encontro conteúdo sobre história da filosofia moderna?",searching_for_information, book_search, história da filosofia moderna
+"Quais livros explicam bem mecânica clássica?",searching_for_information, book_search, mecânica clássica
+"Em qual parte do manual de direito ambiental posso estudar sobre licenciamento?",searching_for_information, book_search, licenciamento, direito ambiental
+"Preciso de referências sobre controladoria",searching_for_information, book_and_article_search, controladoria
+"Onde posso encontrar material sobre antropologia social?",searching_for_information, book_search, antropologia social
+"Busco artigos sobre deep learning",searching_for_information, article_search, deep learning
+"Em qual seção do livro de patologia fala sobre inflamação?",searching_for_information, book_search, inflamação, patologia
+"Procuro conteúdo sobre história da psicologia",searching_for_information, book_search, história da psicologia
+"Onde encontro informações sobre cálculo vetorial?",searching_for_information, book_search, cálculo vetorial
+"Quais são as melhores fontes para estudar sobre direito civil?",searching_for_information, book_search, direito civil
+"Em qual parte do livro de física quântica posso estudar sobre dualidade onda-partícula?",searching_for_information, book_search, dualidade onda-partícula, física quântica
+"Preciso de indicações de livros sobre terapia cognitivo-comportamental",searching_for_information, book_search, terapia cognitivo-comportamental
+"Onde posso encontrar material sobre engenharia estrutural?",searching_for_information, book_search, engenharia estrutural
+"Busco referências sobre gestão de pessoas",searching_for_information, book_and_article_search, gestão de pessoas
+"Em qual capítulo do livro de neuroanatomia fala sobre córtex cerebral?",searching_for_information, book_search, córtex cerebral, neuroanatomia
+"Procuro artigos sobre realidade virtual",searching_for_information, article_search, realidade virtual
+"Onde encontro conteúdo sobre história antiga?",searching_for_information, book_search, história antiga
+"Quais livros abordam bem o tema de química inorgânica?",searching_for_information, book_search, química inorgânica
+"Em qual parte do manual de direito comercial posso estudar sobre sociedades?",searching_for_information, book_search, sociedades, direito comercial
+"Preciso de referências sobre auditoria",searching_for_information, book_and_article_search, auditoria
+"Onde posso encontrar material sobre linguística histórica?",searching_for_information, book_search, linguística histórica
+"Busco artigos sobre computação em nuvem",searching_for_information, article_search, computação em nuvem
+"Em qual seção do livro de botânica fala sobre fotossíntese?",searching_for_information, book_search, fotossíntese, botânica
+"Procuro conteúdo sobre história medieval",searching_for_information, book_search, história medieval
+"Onde encontro informações sobre teoria dos números?",searching_for_information, book_search, teoria dos números
+"Quais são as melhores fontes para estudar sobre direito penal?",searching_for_information, book_search, direito penal
+"Em qual parte do livro de química analítica posso estudar sobre espectrofotometria?",searching_for_information, book_search, espectrofotometria, química analítica
+"Preciso de indicações de livros sobre psicanálise",searching_for_information, book_search, psicanálise
+"Onde posso encontrar material sobre teoria da computação?",searching_for_information, book_search, teoria da computação
+"Busco referências sobre gestão financeira",searching_for_information, book_and_article_search, gestão financeira
+"Em qual capítulo do livro de parasitologia fala sobre protozoários?",searching_for_information, book_search, protozoários, parasitologia
+"Procuro artigos sobre internet das coisas",searching_for_information, article_search, internet das coisas
+"Onde encontro conteúdo sobre história do direito?",searching_for_information, book_search, história do direito
+"Quais livros explicam bem relatividade especial?",searching_for_information, book_search, relatividade especial
+"Em qual parte do manual de direito administrativo posso estudar sobre licitações?",searching_for_information, book_search, licitações, direito administrativo
+"Preciso de referências sobre contabilidade gerencial",searching_for_information, book_and_article_search, contabilidade gerencial
+"Onde posso encontrar material sobre antropologia urbana?",searching_for_information, book_search, antropologia urbana
+"Busco artigos sobre processamento de linguagem natural",searching_for_information, article_search, processamento de linguagem natural
+"Em qual seção do livro de anatomia patológica fala sobre neoplasias?",searching_for_information, book_search, neoplasias, anatomia patológica
+"Procuro conteúdo sobre história contemporânea?",searching_for_information, book_search, história contemporânea
+"Onde encontro informações sobre geometria diferencial?",searching_for_information, book_search, geometria diferencial
+"Quais são as melhores fontes para estudar sobre direito constitucional?",searching_for_information, book_search, direito constitucional
+"Em qual parte do livro de genética posso estudar sobre mutações?",searching_for_information, book_search, mutações, genética
+"Preciso de indicações de livros sobre psicologia analítica",searching_for_information, book_search, psicologia analítica
+"Onde posso encontrar material sobre engenharia química?",searching_for_information, book_search, engenharia química
+"Busco referências sobre gestão de projetos",searching_for_information, book_and_article_search, gestão de projetos
+"Em qual capítulo do livro de microeconomia fala sobre oferta e demanda?",searching_for_information, book_search, oferta e demanda, microeconomia
+"Procuro artigos sobre blockchain",searching_for_information, article_search, blockchain
+"Onde encontro conteúdo sobre história moderna?",searching_for_information, book_search, história moderna
+"Quais livros abordam bem o tema de física estatística?",searching_for_information, book_search, física estatística
+"Em qual parte do manual de direito tributário posso estudar sobre impostos?",searching_for_information, book_search, impostos, manual de direito tributário
+"Preciso de referências sobre análise de sistemas",searching_for_information, book_and_article_search, análise de sistemas
+"Onde posso encontrar material sobre linguística cognitiva?",searching_for_information, book_search, linguística cognitiva
+"Busco artigos sobre computação quântica",searching_for_information, article_search, computação quântica
+"Em qual seção do livro de zoologia fala sobre vertebrados?",searching_for_information, book_search, vertebrados, zoologia
+"Procuro conteúdo sobre história econômica?",searching_for_information, book_search, história econômica
+"Onde encontro informações sobre análise funcional?",searching_for_information, book_search, análise funcional
+"Quais são as melhores fontes para estudar sobre direito processual?",searching_for_information, book_search, direito processual
+"Em qual parte do livro de biologia celular posso estudar sobre mitocôndrias?",searching_for_information, book_search, mitocôndrias, biologia celular
+"Preciso de indicações de livros sobre neuropsicologia",searching_for_information, book_search, neuropsicologia
+"Onde posso encontrar material sobre mecânica quântica avançada?",searching_for_information, book_search, mecânica quântica avançada
+"Busco referências sobre gestão da cadeia de suprimentos",searching_for_information, book_and_article_search, gestão da cadeia de suprimentos
+"Em qual capítulo do livro de virologia fala sobre coronavírus?",searching_for_information, book_search, coronavírus, virologia
+"Procuro artigos sobre cybersegurança",searching_for_information, article_search, cybersegurança
+"Onde encontro conteúdo sobre história da ciência?",searching_for_information, book_search, história da ciência
+"Quais livros explicam bem termodinâmica estatística?",searching_for_information, book_search, termodinâmica estatística
+"Em qual parte do manual de direito internacional posso estudar sobre tratados?",searching_for_information, book_search, tratados, manual de direito internacional
+"Preciso de referências sobre finanças corporativas",searching_for_information, book_and_article_search, finanças corporativas
+"Onde posso encontrar material sobre antropologia política?",searching_for_information, book_search, antropologia política
+"Busco artigos sobre visão computacional",searching_for_information, article_search, visão computacional
+"Em qual seção do livro de endocrinologia fala sobre diabetes?",searching_for_information, book_search, diabetes, endocrinologia
+"Procuro conteúdo sobre história das religiões?",searching_for_information, book_search, história das religiões
+"Onde encontro informações sobre topologia algébrica?",searching_for_information, book_search, topologia algébrica
+"Quais são as melhores fontes para estudar sobre direito do trabalho?",searching_for_information, book_search, direito do trabalho
+"Em qual parte do livro de química orgânica posso estudar sobre reações de adição?",searching_for_information, book_search, reações de adição, química orgânica
+"Preciso de indicações de livros sobre psicologia educacional",searching_for_information, book_search, psicologia educacional
+"Onde posso encontrar material sobre engenharia de produção?",searching_for_information, book_search, engenharia de produção
+"Em qual parte do livro de evolução posso estudar sobre seleção natural?",searching_for_information, book_search, seleção natural, evolução
+"Preciso de indicações de livros sobre psicometria",searching_for_information, book_search, psicometria
+"Onde posso encontrar material sobre engenharia elétrica?",searching_for_information, book_search, engenharia elétrica
+"Busco referências sobre gestão do conhecimento",searching_for_information, book_and_article_search, gestão do conhecimento
+"Em qual capítulo do livro de farmacologia fala sobre antibióticos?",searching_for_information, book_search, antibióticos, farmacologia
+"Procuro artigos sobre inteligência artificial generativa",searching_for_information, article_search, inteligência artificial generativa
+"Onde encontro conteúdo sobre história da literatura?",searching_for_information, book_search, história da literatura
+"Quais livros abordam bem o tema de cosmologia?",searching_for_information, book_search, cosmologia
+"Em qual parte do manual de direito previdenciário posso estudar sobre aposentadoria?",searching_for_information, book_search, aposentadoria, manual de direito previdenciário
+"Preciso de referências sobre economia internacional",searching_for_information, book_and_article_search, economia internacional
+"Onde posso encontrar material sobre semiótica?",searching_for_information, book_search, semiótica
+"Busco artigos sobre robótica",searching_for_information, article_search, robótica
+"Em qual seção do livro de cardiologia fala sobre arritmias?",searching_for_information, book_search, arritmias, cardiologia
+"Procuro conteúdo sobre história da educação?",searching_for_information, book_search, história da educação
+"Onde encontro informações sobre equações diferenciais?",searching_for_information, book_search, equações diferenciais
+"Quais são as melhores fontes para estudar sobre direito digital?",searching_for_information, book_search, direito digital
+"Em qual parte do livro de oceanografia posso estudar sobre correntes marinhas?",searching_for_information, book_search, correntes marinhas, oceanografia
+"Preciso de indicações de livros sobre psicologia cognitiva",searching_for_information, book_search, psicologia cognitiva
+"Onde posso encontrar material sobre arquitetura de computadores?",searching_for_information, book_search, arquitetura de computadores
+"Busco referências sobre gestão da informação",searching_for_information, book_and_article_search, gestão da informação
+"Em qual capítulo do livro de neurologia fala sobre epilepsia?",searching_for_information, book_search, epilepsia, neurologia
+"Procuro artigos sobre data science",searching_for_information, article_search, data science
+"Onde encontro conteúdo sobre história do teatro?",searching_for_information, book_search, história do teatro
+"Quais livros explicam bem mecânica dos sólidos?",searching_for_information, book_search, mecânica dos sólidos
+"Em qual parte do manual de direito empresarial posso estudar sobre falência?",searching_for_information, book_search, falência, manual de direito empresarial
+"Preciso de referências sobre marketing estratégico",searching_for_information, book_and_article_search, marketing estratégico
+"Onde posso encontrar material sobre antropologia econômica?",searching_for_information, book_search, antropologia econômica
+"Busco artigos sobre sistemas distribuídos",searching_for_information, article_search, sistemas distribuídos
+"Em qual seção do livro de ginecologia fala sobre endometriose?",searching_for_information, book_search, endometriose, ginecologia
+"Procuro conteúdo sobre história da arqueologia?",searching_for_information, book_search, história da arqueologia
+"Onde encontro informações sobre teoria dos grafos?",searching_for_information, book_search, teoria dos grafos
+"Quais são as melhores fontes para estudar sobre direito ambiental?",searching_for_information, book_search, direito ambiental
+"Em qual parte do livro de imunologia posso estudar sobre vacinas?",searching_for_information, book_search, vacinas, imunologia
+"Preciso de indicações de livros sobre psicologia do esporte",searching_for_information, book_search, psicologia do esporte
+"Onde posso encontrar material sobre engenharia de materiais?",searching_for_information, book_search, engenharia de materiais
+"Busco referências sobre gestão de riscos",searching_for_information, book_and_article_search, gestão de riscos
+"Em qual capítulo do livro de citologia fala sobre divisão celular?",searching_for_information, book_search, divisão celular, citologia
+"Procuro artigos sobre criptografia",searching_for_information, article_search, criptografia
+"Onde encontro conteúdo sobre história da medicina?",searching_for_information, book_search, história da medicina
+"Quais livros abordam bem o tema de astronomia?",searching_for_information, book_search, astronomia
+"Em qual parte do manual de direito civil posso estudar sobre responsabilidade civil?",searching_for_information, book_search, responsabilidade civil, manual de direito civil
+"Preciso de referências sobre logística empresarial",searching_for_information, book_and_article_search, logística empresarial
+"Onde posso encontrar material sobre fonética e fonologia?",searching_for_information, book_search, fonética e fonologia
+"Busco artigos sobre realidade aumentada",searching_for_information, article_search, realidade aumentada
+"Em qual seção do livro de pediatria fala sobre desenvolvimento infantil?",searching_for_information, book_search, desenvolvimento infantil, pediatria
+"Procuro conteúdo sobre história das artes?",searching_for_information, book_search, história das artes
+"Onde encontro informações sobre análise complexa?",searching_for_information, book_search, análise complexa
+"Quais são as melhores fontes para estudar sobre direito eleitoral?",searching_for_information, book_search, direito eleitoral
+"Em qual parte do livro de botânica posso estudar sobre anatomia vegetal?",searching_for_information, book_search, anatomia vegetal, botânica
+"Preciso de indicações de livros sobre psicologia jurídica",searching_for_information, book_search, psicologia jurídica
+"Onde posso encontrar material sobre redes de computadores?",searching_for_information, book_search, redes de computadores
+"Busco referências sobre gestão da qualidade total",searching_for_information, book_and_article_search, gestão da qualidade total
+"Em qual capítulo do livro de oftalmologia fala sobre retina?",searching_for_information, book_search, retina, oftalmologia
+"Procuro artigos sobre big data",searching_for_information, article_search, big data
+"Onde encontro conteúdo sobre história da física?",searching_for_information, book_search, história da física
+"Quais livros explicam bem eletrodinâmica?",searching_for_information, book_search, eletrodinâmica
+"Em qual parte do manual de direito penal posso estudar sobre crimes cibernéticos?",searching_for_information, book_search, crimes cibernéticos, manual de direito penal
+"Preciso de referências sobre comportamento organizacional",searching_for_information, book_and_article_search, comportamento organizacional
+"Onde posso encontrar material sobre antropologia digital?",searching_for_information, book_search, antropologia digital
+"Busco artigos sobre computação paralela",searching_for_information, article_search, computação paralela
+"Em qual seção do livro de ortopedia fala sobre coluna vertebral?",searching_for_information, book_search, coluna vertebral, ortopedia
+"Procuro conteúdo sobre história da antropologia?",searching_for_information, book_search, história da antropologia
+"Onde encontro informações sobre teoria da probabilidade?",searching_for_information, book_search, teoria da probabilidade
+"Quais são as melhores fontes para estudar sobre direito comercial?",searching_for_information, book_search, direito comercial
+"Em qual parte do livro de biofísica posso estudar sobre radiação?",searching_for_information, book_search, radiação, biofísica
+"Preciso de indicações de livros sobre psicologia evolutiva",searching_for_information, book_search, psicologia evolutiva
+"Onde posso encontrar material sobre engenharia mecânica?",searching_for_information, book_search, engenharia mecânica
+"Busco referências sobre gestão de vendas",searching_for_information, book_and_article_search, gestão de vendas
+"Em qual capítulo do livro de dermatologia fala sobre psoríase?",searching_for_information, book_search, psoríase, dermatologia
+"Procuro artigos sobre IoT",searching_for_information, article_search, IoT
+"Onde encontro conteúdo sobre história da química?",searching_for_information, book_search, história da química
+"Quais livros abordam bem o tema de geologia?",searching_for_information, book_search, geologia
+"Em qual parte do manual de direito financeiro posso estudar sobre orçamento público?",searching_for_information, book_search, orçamento público, manual de direito financeiro
+"Preciso de referências sobre planejamento estratégico",searching_for_information, book_and_article_search, planejamento estratégico
+"Onde posso encontrar material sobre morfologia linguística?",searching_for_information, book_search, morfologia linguística
+"Busco artigos sobre computação em grid",searching_for_information, article_search, computação em grid
+"Em qual seção do livro de psiquiatria fala sobre esquizofrenia?",searching_for_information, book_search, esquizofrenia, psiquiatria
+"Procuro conteúdo sobre história da astronomia?",searching_for_information, book_search, história da astronomia
+"Onde encontro informações sobre teoria da medida?",searching_for_information, book_search, teoria da medida
+"Quais são as melhores fontes para estudar sobre direito do consumidor?",searching_for_information, book_search, direito do consumidor
+"Em qual parte do livro de zoologia posso estudar sobre invertebrados?",searching_for_information, book_search, invertebrados, zoologia
+"Preciso de indicações de livros sobre psicologia positiva",searching_for_information, book_search, psicologia positiva
+"Onde posso encontrar material sobre arquitetura de software?",searching_for_information, book_search, arquitetura de software
+"Busco referências sobre gestão de custos",searching_for_information, book_and_article_search, gestão de custos
+"Em qual capítulo do livro de nefrologia fala sobre insuficiência renal?",searching_for_information, book_search, insuficiência renal, nefrologia
+"Procuro artigos sobre mineração de dados",searching_for_information, article_search, mineração de dados
+"Onde encontro conteúdo sobre história da biologia?",searching_for_information, book_search, história da biologia
+"Quais livros explicam bem física nuclear?",searching_for_information, book_search, física nuclear
+"Em qual parte do manual de direito administrativo posso estudar sobre servidores públicos?",searching_for_information, book_search, servidores públicos, manual de direito administrativo
+"Preciso de referências sobre gestão da produção",searching_for_information, book_and_article_search, gestão da produção
+"Onde posso encontrar material sobre antropologia da religião?",searching_for_information, book_search, antropologia da religião
+"Busco artigos sobre segurança da informação",searching_for_information, article_search, segurança da informação
+"Em qual seção do livro de reumatologia fala sobre artrite?",searching_for_information, book_search, artrite, reumatologia
+"Procuro conteúdo sobre história da geografia?",searching_for_information, book_search, história da geografia
+"Onde encontro informações sobre teoria das categorias?",searching_for_information, book_search, teoria das categorias
+"Quais são as melhores fontes para estudar sobre direito marítimo?",searching_for_information, book_search, direito marítimo
+"Em qual parte do livro de microbiologia posso estudar sobre vírus?",searching_for_information, book_search, vírus, microbiologia
+"Preciso de indicações de livros sobre psicologia infantil",searching_for_information, book_search, psicologia infantil
+"Onde posso encontrar material sobre engenharia civil?",searching_for_information, book_search, engenharia civil
+"Busco referências sobre gestão ambiental empresarial",searching_for_information, book_and_article_search, gestão ambiental empresarial
+"Em qual capítulo do livro de hematologia fala sobre anemias?",searching_for_information, book_search, anemias, hematologia
+"Procuro artigos sobre computação cognitiva",searching_for_information, article_search, computação cognitiva
+"Onde encontro conteúdo sobre história da sociologia?",searching_for_information, book_search, história da sociologia
+"Quais livros abordam bem o tema de química quântica?",searching_for_information, book_search, química quântica
+"Em qual parte do manual de direito tributário posso estudar sobre execução fiscal?",searching_for_information, book_search, execução fiscal, manual de direito tributário
+"Preciso de referências sobre análise de investimentos",searching_for_information, book_and_article_search, análise de investimentos
+"Onde posso encontrar material sobre sintaxe linguística?",searching_for_information, book_search, sintaxe linguística
+"Busco artigos sobre fog computing",searching_for_information, article_search, fog computing
+"Em qual seção do livro de pneumologia fala sobre asma?",searching_for_information, book_search, asma, pneumologia
+"Procuro conteúdo sobre história da tecnologia da informação?",searching_for_information, book_search, história da tecnologia da informação
+"Onde encontro informações sobre álgebra linear avançada?",searching_for_information, book_search, álgebra linear avançada
+"Quais são as melhores fontes para estudar sobre direito urbanístico?",searching_for_information, book_search, direito urbanístico
+"Em qual parte do livro de ecologia posso estudar sobre biomas?",searching_for_information, book_search, biomas, ecologia
+"Preciso de indicações de livros sobre psicologia transpessoal",searching_for_information, book_search, psicologia transpessoal
+"Onde posso encontrar material sobre sistemas embarcados?",searching_for_information, book_search, sistemas embarcados
+"Busco referências sobre gestão da inovação tecnológica",searching_for_information, book_and_article_search, gestão da inovação tecnológica
+"Em qual capítulo do livro de gastroenterologia fala sobre úlcera?",searching_for_information, book_search, úlcera, gastroenterologia
+"Procuro artigos sobre edge computing",searching_for_information, article_search, edge computing
+"Onde encontro conteúdo sobre história da matemática aplicada?",searching_for_information, book_search, história da matemática aplicada
+"Quais livros explicam bem teoria da relatividade?",searching_for_information, book_search, teoria da relatividade
+"Em qual parte do manual de direito do trabalho posso estudar sobre férias?",searching_for_information, book_search, férias, manual de direito do trabalho
+"Preciso de referências sobre análise de riscos",searching_for_information, book_and_article_search, análise de riscos
+"Onde posso encontrar material sobre antropologia visual?",searching_for_information, book_search, antropologia visual
+"Busco artigos sobre computação móvel",searching_for_information, article_search, computação móvel
+"Em qual seção do livro de oncologia fala sobre câncer de mama?",searching_for_information, book_search, câncer de mama, oncologia
+"Procuro conteúdo sobre história da psicologia?",searching_for_information, book_search, história da psicologia
+"No livro Hands-On Machine Learning, o que é uma rede neural?",question_answering,book_question,redes neurais,Hands-On Machine Learning
+"O que é machine learning?",question_answering,definition,machine learning
+"No livro Clean Code, qual a diferença entre coesão e acoplamento?",question_answering,book_question,coesão e acoplamento,Clean Code
+"O que é programação orientada a objetos?",question_answering,definition,programação orientada a objetos
+"No Livro Design Patterns, como funciona o padrão Observer?",question_answering,book_question,padrão Observer,Design Patterns
+"Como calcular a derivada de uma função exponencial?",question_answering,problem_solving,derivada de função exponencial
+"No livro Introduction to Algorithms, como funciona o algoritmo QuickSort?",question_answering,book_question,QuickSort,Introduction to Algorithms
+"O que é uma reação de oxidação?",question_answering,definition,reação de oxidação
+"Como resolver uma equação de segundo grau?",question_answering,problem_solving,equação de segundo grau
+"No livro Gray's Anatomy, qual a função do sistema límbico?",question_answering,book_question,sistema límbico,Gray's Anatomy
+"O que é o princípio da incerteza de Heisenberg?",question_answering,definition,princípio da incerteza de Heisenberg
+"No livro Teoria Geral do Direito Civil, o que constitui um negócio jurídico?",question_answering,book_question,negócio jurídico,Teoria Geral do Direito Civil
+"Como calcular o pH de uma solução?",question_answering,problem_solving,cálculo de pH
+"O que é fotossíntese?",question_answering,definition,fotossíntese
+"No livro Marketing 4.0, o que é marketing digital?",question_answering,book_question,marketing digital,Marketing 4.0
+"Como calcular a área de um triângulo?",question_answering,problem_solving,área de triângulo
+"O que é inflação?",question_answering,definition,inflação
+"No livro Psicologia Cognitiva, como funciona a memória de curto prazo?",question_answering,book_question,memória de curto prazo,Psicologia Cognitiva
+"O que é um banco de dados relacional?",question_answering,definition,banco de dados relacional
+"Como resolver um sistema de equações lineares?",question_answering,problem_solving,sistema de equações lineares
+"No livro Principia Mathematica, como é definido o conceito de número?",question_answering,book_question,conceito de número,Principia Mathematica
+"O que é o efeito fotoelétrico?",question_answering,definition,efeito fotoelétrico
+"Como balancear uma equação química?",question_answering,problem_solving,balanceamento de equação química
+"No livro Microeconomia, como funciona a lei da oferta e demanda?",question_answering,book_question,lei da oferta e demanda,Microeconomia
+"O que é uma ligação covalente?",question_answering,definition,ligação covalente
+"No livro Anatomia Humana, qual a estrutura do coração?",question_answering,book_question,estrutura do coração,Anatomia Humana
+"Como calcular a velocidade média?",question_answering,problem_solving,velocidade média
+"O que é desenvolvimento sustentável?",question_answering,definition,desenvolvimento sustentável
+"No livro História do Brasil, quais foram as causas da Proclamação da República?",question_answering,book_question,causas da Proclamação da República,História do Brasil
+"O que é uma função logarítmica?",question_answering,definition,função logarítmica
+"Como calcular o momento de inércia?",question_answering,problem_solving,momento de inércia
+"No livro Filosofia Política, o que é o contrato social segundo Rousseau?",question_answering,book_question,contrato social,Filosofia Política
+"O que é a teoria da evolução?",question_answering,definition,teoria da evolução
+"Como resolver uma integral por partes?",question_answering,problem_solving,integral por partes
+"No livro Fundamentos de Física, como funciona a primeira lei de Newton?",question_answering,book_question,primeira lei de Newton,Fundamentos de Física
+"O que é inteligência artificial?",question_answering,definition,inteligência artificial
+"Como calcular a probabilidade condicional?",question_answering,problem_solving,probabilidade condicional
+"No livro Introdução à Contabilidade, como fazer um balanço patrimonial?",question_answering,book_question,balanço patrimonial,Introdução à Contabilidade
+"O que é uma reação enzimática?",question_answering,definition,reação enzimática
+"Como calcular o work breakdown structure de um projeto?",question_answering,problem_solving,work breakdown structure
+"No livro Direito Constitucional, o que são direitos fundamentais?",question_answering,book_question,direitos fundamentais,Direito Constitucional
+"O que é um algoritmo de busca?",question_answering,definition,algoritmo de busca
+"Como calcular o valor presente líquido?",question_answering,problem_solving,valor presente líquido
+"No livro Bioquímica Básica, como funciona o ciclo de Krebs?",question_answering,book_question,ciclo de Krebs,Bioquímica Básica
+"O que é uma transformada de Fourier?",question_answering,definition,transformada de Fourier
+"Como calcular a resistência equivalente?",question_answering,problem_solving,resistência equivalente
+"No livro Redes de Computadores, como funciona o protocolo TCP/IP?",question_answering,book_question,protocolo TCP/IP,Redes de Computadores
+"O que é gestão ágil?",question_answering,definition,gestão ágil
+"Como calcular o ponto de equilíbrio financeiro?",question_answering,problem_solving,ponto de equilíbrio financeiro
+"No livro Neurociência, como funciona a sinapse neural?",question_answering,book_question,sinapse neural,Neurociência
+"O que é uma classe social?",question_answering,definition,classe social
+"Como calcular o fluxo magnético?",question_answering,problem_solving,fluxo magnético
+"No livro Farmacologia, como funciona a absorção de medicamentos?",question_answering,book_question,absorção de medicamentos,Farmacologia
+"O que é um sistema operacional?",question_answering,definition,sistema operacional
+"Como calcular o índice de liquidez?",question_answering,problem_solving,índice de liquidez
+"No livro Teoria Musical, como formar acordes maiores?",question_answering,book_question,formação de acordes maiores,Teoria Musical
+"O que é uma pandemia?",question_answering,definition,pandemia
+"Como calcular a força resultante?",question_answering,problem_solving,força resultante
+"No livro Introdução à Economia, o que é PIB?",question_answering,book_question,PIB,Introdução à Economia
+"No livro Statistical Learning, o que é overfitting?",question_answering,book_question,overfitting,Statistical Learning
+"O que é deep learning?",question_answering,definition,deep learning
+"Como calcular a taxa interna de retorno?",question_answering,problem_solving,taxa interna de retorno
+"No livro Direito Penal, quais são os elementos do crime?",question_answering,book_question,elementos do crime,Direito Penal
+"O que é um ecossistema?",question_answering,definition,ecossistema
+"Como resolver um limite por L'Hôpital?",question_answering,problem_solving,limite por L'Hôpital
+"No livro Database Systems, o que é uma chave primária?",question_answering,book_question,chave primária,Database Systems
+"O que é energia cinética?",question_answering,definition,energia cinética
+"Como calcular o desvio padrão?",question_answering,problem_solving,desvio padrão
+"No livro Organic Chemistry, quais são as características dos grupos funcionais?",question_answering,book_question,características dos grupos funcionais,Organic Chemistry
+"O que é um paradigma de programação?",question_answering,definition,paradigma de programação
+"Como calcular o período de payback?",question_answering,problem_solving,período de payback
+"No livro Microbiologia, quais são os tipos de reprodução bacteriana?",question_answering,book_question,tipos de reprodução bacteriana,Microbiologia
+"O que é blockchain?",question_answering,definition,blockchain
+"Como calcular a entropia de um sistema?",question_answering,problem_solving,entropia
+"No livro Análise Financeira, quais são os componentes do DRE?",question_answering,book_question,componentes do DRE,Análise Financeira
+"O que é uma derivada parcial?",question_answering,definition,derivada parcial
+"Como calcular o campo elétrico?",question_answering,problem_solving,campo elétrico
+"No livro Estrutura de Dados, o que é uma árvore binária?",question_answering,book_question,árvore binária,Estrutura de Dados
+"O que é um buffer overflow?",question_answering,definition,buffer overflow
+"Como calcular a margem de contribuição?",question_answering,problem_solving,margem de contribuição
+"No livro Psicopatologia, quais são os sintomas da depressão?",question_answering,book_question,sintomas da depressão,Psicopatologia
+"O que é uma reação exotérmica?",question_answering,definition,reação exotérmica
+"Como calcular o momento angular?",question_answering,problem_solving,momento angular
+"No livro Teoria da Computação, quais são as características de uma máquina de Turing?",question_answering,book_question,características da máquina de Turing,Teoria da Computação
+"O que é um polimorfismo?",question_answering,definition,polimorfismo
+"Como calcular o ponto crítico de uma função?",question_answering,problem_solving,ponto crítico
+"No livro Marketing Digital, quais são os principais fatores do SEO?",question_answering,book_question,fatores do SEO,Marketing Digital
+"O que é uma célula-tronco?",question_answering,definition,célula-tronco
+"Como calcular a densidade populacional?",question_answering,problem_solving,densidade populacional
+"No livro Geometria Analítica, quais são os elementos da equação da reta?",question_answering,book_question,elementos da equação da reta,Geometria Analítica
+"O que é um sistema distribuído?",question_answering,definition,sistema distribuído
+"Como calcular o pKa de uma solução?",question_answering,problem_solving,pKa
+"No livro Sistemas Operacionais, quais são os tipos de escalonamento de processos?",question_answering,book_question,tipos de escalonamento de processos,Sistemas Operacionais
+"O que é uma hipótese nula?",question_answering,definition,hipótese nula
+"Como calcular a velocidade angular?",question_answering,problem_solving,velocidade angular
+"No livro Direito Administrativo, quais são os princípios da administração pública?",question_answering,book_question,princípios da administração pública,Direito Administrativo
+"O que é um neurotransmissor?",question_answering,definition,neurotransmissor
+"Como calcular a taxa de juros efetiva?",question_answering,problem_solving,taxa de juros efetiva
+"No livro Compiladores, quais são as fases da análise léxica?",question_answering,book_question,fases da análise léxica,Compiladores
+"O que é uma função recursiva?",question_answering,definition,função recursiva
+"Como calcular o coeficiente de elasticidade?",question_answering,problem_solving,coeficiente de elasticidade
+"No livro Termodinâmica, o que é a primeira lei?",question_answering,book_question,primeira lei da termodinâmica,Termodinâmica
+"O que é aprendizado supervisionado?",question_answering,definition,aprendizado supervisionado
+"Como calcular o valor futuro de um investimento?",question_answering,problem_solving,valor futuro
+"No livro Parasitologia, quais são as fases do ciclo de vida do Plasmodium?",question_answering,book_question,fases do ciclo do Plasmodium,Parasitologia
+"O que é um teste de hipótese?",question_answering,definition,teste de hipótese
+"Como calcular o ponto de ebulição?",question_answering,problem_solving,ponto de ebulição
+"No livro Cálculo Numérico, quais são os tipos de EDOs?",question_answering,book_question,tipos de EDOs,Cálculo Numérico
+"O que é uma herança genética?",question_answering,definition,herança genética
+"Como calcular o custo médio ponderado de capital?",question_answering,problem_solving,custo médio ponderado de capital
+"No livro Gestão de Projetos, quais são os elementos de um cronograma?",question_answering,book_question,elementos de cronograma,Gestão de Projetos
+"O que é uma matriz invertível?",question_answering,definition,matriz invertível
+"Como calcular a pressão hidrostática?",question_answering,problem_solving,pressão hidrostática
+"No livro Imunologia, quais são os componentes da resposta imune adaptativa?",question_answering,book_question,componentes da resposta imune,Imunologia
+"O que é um algoritmo de ordenação?",question_answering,definition,algoritmo de ordenação
+"Como calcular o ponto de equilíbrio químico?",question_answering,problem_solving,ponto de equilíbrio químico
+"No livro Arquitetura de Software, qual a diferença entre padrões estruturais e comportamentais?",question_answering,book_question,diferença entre padrões,Arquitetura de Software
+"O que é uma variável aleatória?",question_answering,definition,variável aleatória
+"Como calcular a força centrípeta?",question_answering,problem_solving,força centrípeta
+"No livro Análise de Algoritmos, o que determina a complexidade temporal?",question_answering,book_question,determinantes da complexidade temporal,Análise de Algoritmos
+"O que é um cromossomo?",question_answering,definition,cromossomo
+"Como calcular o índice de refração?",question_answering,problem_solving,índice de refração
+"No livro Contabilidade Gerencial, quais são os componentes do fluxo de caixa?",question_answering,book_question,componentes do fluxo de caixa,Contabilidade Gerencial
+"Escreva um código para calcular o fatorial de um número",coding,write_code,fatorial
+"No livro Python Cookbook, como implementar um decorator para medir o tempo de execução?",coding,book_write_code,decorator para tempo de execução,Python Cookbook
+"Por que esse código de busca binária está retornando índice errado: def binary_search(arr, x): low = 0 high = len(arr) - 1 while low <= high: mid = (low + high) / 2 if arr[mid] == x: return mid elif arr[mid] < x: low = mid + 1 else: high = mid - 1 return -1",coding,debug_code,busca binária
+"No livro Clean Code, qual o problema neste código: public void processUser(User user) { if(user.isValid()) { user.process(); } if(user.isValid()) { user.sendEmail(); }}",coding,book_debug_code,código duplicado,Clean Code
+"Explique como funciona este código recursivo: def fibonacci(n): if n <= 1: return n return fibonacci(n-1) + fibonacci(n-2)",coding,explain_code,fibonacci recursivo
+"No livro Grokking Algorithms, explique como funciona este código de ordenação quicksort: def quicksort(array): if len(array) < 2: return array pivot = array[0] less = [i for i in array[1:] if i <= pivot] greater = [i for i in array[1:] if i > pivot] return quicksort(less) + [pivot] + quicksort(greater)",coding,book_explain_code,quicksort,Grokking Algorithms
+"Crie uma função que verifique se uma string é um palíndromo",coding,write_code,verificação de palíndromo
+"No livro Cracking the Coding Interview, como implementar uma pilha usando duas filas?",coding,book_write_code,pilha com duas filas,Cracking the Coding Interview
+"Por que este código de ordenação merge sort está causando stack overflow: def mergeSort(arr): if len(arr) > 1: mid = len(arr)/2 L = arr[:mid] R = arr[mid:] mergeSort(L) mergeSort(R) i = j = k = 0 while i < len(L) and j < len(R): if L[i] < R[j]: arr[k] = L[i] i += 1 else: arr[k] = R[j] j += 1 k += 1",coding,debug_code,merge sort stack overflow
+"No livro Head First Design Patterns, qual o problema neste singleton: public class Singleton { private static Singleton instance; private Singleton() {} public static Singleton getInstance() { if(instance == null) { instance = new Singleton(); } return instance; }}",coding,book_debug_code,singleton thread-safe,Head First Design Patterns
+"Explique como funciona este código de árvore binária: class Node: def __init__(self, key): self.left = None self.right = None self.val = key",coding,explain_code,estrutura de árvore binária
+"No livro Introduction to Algorithms, explique como funciona este algoritmo de Dijkstra: def dijkstra(graph, initial): visited = {initial: 0} path = {} nodes = set(graph.nodes) while nodes: min_node = None min_node_value = float('inf') for node in nodes: if node in visited: if visited[node] <= min_node_value: min_node = node min_node_value = visited[node]",coding,book_explain_code,algoritmo de Dijkstra,Introduction to Algorithms
+"Implemente um decorador que faça cache dos resultados de uma função",coding,write_code,decorator para cache
+"No livro Python Fluente, como implementar um context manager personalizado?",coding,book_write_code,context manager,Python Fluente
+"Este código de lista encadeada está perdendo referências, por quê? class Node: def __init__(self, data): self.data = data self.next = None def insert(self, data): new_node = Node(data) new_node.next = self.next self.next = new_node",coding,debug_code,lista encadeada com perda de referência
+"No livro Effective Python, qual o problema neste código de gerenciamento de recursos: f = open('file.txt') data = f.read()",coding,book_debug_code,gerenciamento de recursos,Effective Python
+"Explique como funciona este código de heap: def heapify(arr, n, i): largest = i l = 2 * i + 1 r = 2 * i + 2",coding,explain_code,heapify
+"No livro Data Structures and Algorithms in Python, explique como funciona este código de árvore AVL: def height(self): if self is None: return 0 return self.height",coding,book_explain_code,árvore AVL,Data Structures and Algorithms in Python
+"Escreva um código que implemente o padrão observer",coding,write_code,padrão observer
+"No livro Design Patterns, como implementar um factory method?",coding,book_write_code,factory method,Design Patterns
+"Por que este código de thread está causando deadlock: def transfer(self, from_account, to_account, amount): from_account.lock.acquire() to_account.lock.acquire()",coding,debug_code,deadlock em threads
+"No livro Java Concurrency in Practice, qual o problema neste código de concorrência: public class Counter { private int count = 0; public void increment() { count++; }}",coding,book_debug_code,counter thread-safe,Java Concurrency in Practice
+"Explique como funciona este código de programação dinâmica: def lcs(X, Y, m, n): if m == 0 or n == 0: return 0 elif X[m-1] == Y[n-1]: return 1 + lcs(X, Y, m-1, n-1) else: return max(lcs(X, Y, m, n-1), lcs(X, Y, m-1, n))",coding,explain_code,longest common subsequence
+"No livro Algorithm Design Manual, explique como funciona este código de programação dinâmica para o problema da mochila: def knapsack(W, wt, val, n): if n == 0 or W == 0: return 0",coding,book_explain_code,problema da mochila,Algorithm Design Manual
+"Implemente um algoritmo de compressão usando a codificação de Huffman",coding,write_code,codificação de Huffman
+"No livro Elements of Programming Interviews, como implementar um LRU cache?",coding,book_write_code,LRU cache,Elements of Programming Interviews
+"Este código de grafo está vazando memória, por quê? class Graph: def __init__(self): self.graph = {} def add_edge(self, u, v): self.graph[u].append(v)",coding,debug_code,vazamento de memória em grafo
+"No livro Programming Pearls, qual o problema neste código de ordenação: def sort(arr): for i in range(len(arr)): for j in range(len(arr)): if arr[i] < arr[j]: arr[i], arr[j] = arr[j], arr[i]",coding,book_debug_code,bubble sort ineficiente,Programming Pearls
+"Explique como funciona este código de trie: class TrieNode: def __init__(self): self.children = {} self.is_end_of_word = False",coding,explain_code,estrutura trie
+"No livro Algorithms, 4th Edition, explique como funciona este código de union-find: def union(self, p, q): i = self.find(p) j = self.find(q) if i == j: return self.id[i] = j self.count -= 1",coding,book_explain_code,union-find,Algorithms 4th Edition
+"Faça um resumo do artigo 'Deep Learning: A Comprehensive Survey'",summarization,article_summarization,deep learning,Deep Learning: A Comprehensive Survey
+"Resuma o livro 'A Origem das Espécies' de Charles Darwin",summarization,book_summarization,teoria da evolução,A Origem das Espécies
+"Resuma este parágrafo: A fotossíntese é um processo utilizado pelos organismos autotróficos para produzir energia química a partir da luz solar. Durante este processo, a energia luminosa é convertida em energia química, que é armazenada em moléculas de glicose, liberando oxigênio como subproduto.",summarization,sentence_summarization,fotossíntese
+"Faça um resumo do artigo 'Machine Learning in Healthcare: A Review'",summarization,article_summarization,machine learning em saúde,Machine Learning in Healthcare: A Review
+"Resuma o livro 'O Príncipe' de Maquiavel",summarization,book_summarization,ciência política,O Príncipe
+"Resuma este texto: O aquecimento global é o aumento da temperatura média da Terra causado principalmente pela emissão de gases de efeito estufa. Este fenômeno tem causado mudanças climáticas significativas, incluindo o derretimento das calotas polares e o aumento do nível do mar.",summarization,sentence_summarization,aquecimento global
+"Faça um resumo do artigo 'Blockchain Technology: Past, Present, and Future'",summarization,article_summarization,blockchain,Blockchain Technology: Past Present and Future
+"Resuma o livro '1984' de George Orwell",summarization,book_summarization,distopia,1984
+"Resuma este parágrafo: A Revolução Industrial foi um período de grandes transformações tecnológicas e sociais que começou na Inglaterra no século XVIII. Caracterizou-se pela transição da manufatura para a produção mecanizada, resultando em mudanças significativas na economia e sociedade.",summarization,sentence_summarization,Revolução Industrial
+"Faça um resumo do artigo 'Artificial Intelligence in Education: Current Trends'",summarization,article_summarization,IA na educação,Artificial Intelligence in Education: Current Trends
+"Resuma o livro 'Sapiens: Uma Breve História da Humanidade'",summarization,book_summarization,história da humanidade,Sapiens: Uma Breve História da Humanidade
+"Resuma este texto: O DNA é uma molécula que carrega informações genéticas e instruções para o desenvolvimento e funcionamento dos seres vivos. Sua estrutura em dupla hélice foi descoberta por Watson e Crick em 1953, revolucionando nossa compreensão da hereditariedade.",summarization,sentence_summarization,DNA
+"Faça um resumo do artigo 'The Impact of Social Media on Mental Health'",summarization,article_summarization,redes sociais e saúde mental,The Impact of Social Media on Mental Health
+"Resuma o livro 'O Capital'",summarization,book_summarization,economia política,O Capital
+"Resuma este parágrafo: A Lei da Gravitação Universal, proposta por Isaac Newton, estabelece que todos os corpos no universo se atraem mutuamente com uma força diretamente proporcional ao produto de suas massas e inversamente proporcional ao quadrado da distância entre eles.",summarization,sentence_summarization,gravitação universal
+"Faça um resumo do artigo 'Quantum Computing: Recent Advances'",summarization,article_summarization,computação quântica,Quantum Computing: Recent Advances
+"Resuma o livro 'Dom Casmurro'",summarization,book_summarization,literatura brasileira,Dom Casmurro
+"Resuma este texto: A mitose é um processo de divisão celular onde uma célula-mãe se divide em duas células-filhas geneticamente idênticas. Este processo é fundamental para o crescimento e reparo de tecidos nos organismos multicelulares.",summarization,sentence_summarization,mitose
+"Faça um resumo do artigo 'Sustainable Energy: Solutions for the Future'",summarization,article_summarization,energia sustentável,Sustainable Energy: Solutions for the Future
+"Resuma o livro 'A Riqueza das Nações'",summarization,book_summarization,economia,A Riqueza das Nações
+"Resuma este parágrafo: O sistema imunológico é uma rede complexa de células, tecidos e órgãos que trabalham juntos para defender o corpo contra patógenos. Ele pode reconhecer e eliminar uma grande variedade de ameaças, incluindo bactérias, vírus e células cancerosas.",summarization,sentence_summarization,sistema imunológico
+"Faça um resumo do artigo 'The Future of Work: AI and Automation'",summarization,article_summarization,futuro do trabalho,The Future of Work: AI and Automation
+"Resuma o livro 'Breve História do Tempo'",summarization,book_summarization,cosmologia,Breve História do Tempo
+"Resuma este texto: A Primeira Guerra Mundial foi um conflito global que durou de 1914 a 1918, envolvendo as principais potências mundiais. O conflito resultou em milhões de mortes e mudou significativamente o mapa político da Europa.",summarization,sentence_summarization,Primeira Guerra Mundial
+"Faça um resumo do artigo 'Climate Change: Recent Evidence and Projections'",summarization,article_summarization,mudanças climáticas,Climate Change: Recent Evidence and Projections
+"Resuma o livro 'O Gene Egoísta'",summarization,book_summarization,genética,O Gene Egoísta
+"Resuma este parágrafo: O Renascimento foi um movimento cultural, artístico e científico que se desenvolveu na Europa entre os séculos XIV e XVII. Caracterizou-se pela redescoberta e revalorização das referências culturais da antiguidade clássica.",summarization,sentence_summarization,Renascimento
+"Faça um resumo do artigo 'Cybersecurity in the Digital Age'",summarization,article_summarization,cibersegurança,Cybersecurity in the Digital Age
+"Resuma o livro 'Cem Anos de Solidão'",summarization,book_summarization,realismo mágico,Cem Anos de Solidão
+"Resuma este texto: As equações de Maxwell são um conjunto de quatro equações que descrevem os fundamentos do eletromagnetismo, unificando a eletricidade, o magnetismo e a óptica em uma única teoria coerente.",summarization,sentence_summarization,equações de Maxwell
+"Faça um resumo do artigo 'The Psychology of Decision Making'",summarization,article_summarization,psicologia decisória,The Psychology of Decision Making
+"Resuma o livro 'A República'",summarization,book_summarization,filosofia política,A República
+"Faça um resumo do artigo 'Advances in Cancer Treatment'",summarization,article_summarization,tratamento do câncer,Advances in Cancer Treatment
+"Resuma o livro 'O Pequeno Príncipe'",summarization,book_summarization,literatura infantil,O Pequeno Príncipe
+"Resuma este texto: A Revolução Francesa foi um período de intensas mudanças sociais e políticas na França que começou em 1789. O movimento questionou o poder absoluto da monarquia e estabeleceu novos princípios de cidadania.",summarization,sentence_summarization,Revolução Francesa
+"No livro <book_name>Hands-On Machine Learning</book_name>, como implementar uma rede neural?",coding,bookID_write_code,implementação de rede neural,Hands-On Machine Learning
+"No livro <book_name>Clean Code</book_name>, qual o problema neste código de manipulação de arquivos: file = open('test.txt') data = file.read()",coding,bookID_debug_code,manipulação de arquivos,Clean Code
+"No livro <book_name>Introduction to Algorithms</book_name>, explique como funciona este algoritmo de ordenação: def bubble_sort(arr): for i in range(len(arr)): for j in range(len(arr)-1): if arr[j] > arr[j+1]: arr[j], arr[j+1] = arr[j+1], arr[j]",coding,bookID_explain_code,bubble sort,Introduction to Algorithms
+"Resuma o livro <book_name>A Origem das Espécies</book_name>",summarization,bookID_summarization,teoria da evolução,A Origem das Espécies
+"No livro <book_name>Design Patterns</book_name>, qual a estrutura do padrão Observer?",question_answering,bookID_question,padrão Observer,Design Patterns
+"Onde posso encontrar informações sobre herança no livro <book_name>Java: Como Programar</book_name>?",searching_for_information,bookID_search,herança em Java,Java: Como Programar
+"No livro <book_name>Python Cookbook</book_name>, como implementar um decorador?",coding,bookID_write_code,implementação de decorador,Python Cookbook
+"No livro <book_name>Effective Java</book_name>, qual o problema com este singleton: class Singleton { private static Singleton instance; public static Singleton getInstance() { if(instance == null) instance = new Singleton(); return instance; }}",coding,bookID_debug_code,singleton thread-safe,Effective Java
+"No livro <book_name>Grokking Algorithms</book_name>, explique como funciona este código de busca binária: def binary_search(arr, x): low = 0; high = len(arr)-1; while low <= high: mid = (low + high)//2; if arr[mid] == x: return mid",coding,bookID_explain_code,busca binária,Grokking Algorithms
+"Resuma o livro <book_name>O Príncipe</book_name>",summarization,bookID_summarization,ciência política,O Príncipe
+"No livro <book_name>Structure and Interpretation of Computer Programs</book_name>, como funcionam as closures?",question_answering,bookID_question,closures,Structure and Interpretation of Computer Programs
+"Onde posso encontrar exemplos de polimorfismo no livro <book_name>Head First Design Patterns</book_name>?",searching_for_information,bookID_search,polimorfismo,Head First Design Patterns
+"No livro <book_name>Fluent Python</book_name>, como implementar um context manager?",coding,bookID_write_code,context manager,Fluent Python
+"No livro <book_name>Code Complete</book_name>, qual o problema neste código de tratamento de erros: try: process_data() except: pass",coding,bookID_debug_code,tratamento de erros,Code Complete
+"No livro <book_name>Cracking the Coding Interview</book_name>, explique como funciona esta solução do problema das torres de Hanoi: def move_tower(height,from_pole,to_pole,with_pole): if height >= 1: move_tower(height-1,from_pole,with_pole,to_pole)",coding,bookID_explain_code,torres de Hanoi,Cracking the Coding Interview
+"Resuma o livro <book_name>1984</book_name>",summarization,bookID_summarization,distopia,1984
+"No livro <book_name>Domain-Driven Design</book_name>, qual a diferença entre entidades e objetos de valor?",question_answering,bookID_question,entidades e objetos de valor,Domain-Driven Design
+"Onde posso encontrar informações sobre padrões arquiteturais no livro <book_name>Clean Architecture</book_name>?",searching_for_information,bookID_search,padrões arquiteturais,Clean Architecture
+"No livro <book_name>Pro Git</book_name>, como implementar um hook de pre-commit?",coding,bookID_write_code,git hooks,Pro Git
+"No livro <book_name>Refactoring</book_name>, qual o problema neste código com code smells: class Order { public void process() { if(type == 'regular') { // regular processing } else if(type == 'expedited') { // expedited processing } else if(type == 'rush') { // rush processing }}}",coding,bookID_debug_code,code smells,Refactoring
+"No livro <book_name>Real-World Cryptography</book_name>, explique como funciona este código de hash: def hash_password(password, salt): return hashlib.pbkdf2_hmac('sha256', password.encode(), salt, 100000)",coding,bookID_explain_code,hash de senha,Real-World Cryptography
+"Resuma o livro <book_name>Sapiens: Uma Breve História da Humanidade</book_name>",summarization,bookID_summarization,história da humanidade,Sapiens: Uma Breve História da Humanidade
+"No livro <book_name>Artificial Intelligence: A Modern Approach</book_name>, como funciona o algoritmo A*?",question_answering,bookID_question,algoritmo A*,Artificial Intelligence: A Modern Approach
+"Onde posso encontrar exemplos de programação funcional no livro <book_name>Programming in Haskell</book_name>?",searching_for_information,bookID_search,programação funcional,Programming in Haskell
+"No livro <book_name>Introduction to the Theory of Computation</book_name>, como funciona o algoritmo de minimização de autômatos finitos?",question_answering,bookID_question,minimização de autômatos finitos,Introduction to the Theory of Computation
+"Implemente um algoritmo de ordenação por inserção",coding,write_code,insertion sort
+"No livro <book_name>Algorithms to Live By</book_name>, como implementar um algoritmo de cache LRU?",coding,bookID_write_code,LRU cache,Algorithms to Live By
+"Crie uma função que verifique se um número é primo",coding,write_code,verificação de número primo
+"No livro <book_name>Data Structures Using Java</book_name>, como implementar uma árvore binária de busca?",coding,bookID_write_code,árvore binária de busca,Data Structures Using Java
+"Por que este código de lista ligada está perdendo nós: class Node: def add(self, val): next = Node(val)",coding,debug_code,perda de nós em lista ligada
+"No livro <book_name>Python for Data Analysis</book_name>, como implementar uma análise de séries temporais?",coding,bookID_write_code,análise de séries temporais,Python for Data Analysis
+"Implemente o algoritmo de busca em profundidade para grafos",coding,write_code,busca em profundidade
+"No livro <book_name>Operating System Concepts</book_name>, como implementar um algoritmo de escalonamento round-robin?",coding,bookID_write_code,escalonamento round-robin,Operating System Concepts
+"Crie uma função que calcule o mínimo divisor comum de dois números",coding,write_code,mínimo divisor comum
+"No livro <book_name>Java Performance</book_name>, como implementar um pool de threads eficiente?",coding,bookID_write_code,pool de threads,Java Performance
+"Implemente uma função que resolva o problema da mochila",coding,write_code,problema da mochila
+"No livro <book_name>Algorithm Design Manual</book_name>, como implementar um algoritmo de máximo fluxo?",coding,bookID_write_code,algoritmo de máximo fluxo,Algorithm Design Manual
+"Este código de árvore rubro-negra está desbalanceado: def insert(self, val): node = Node(val, color='red')",coding,debug_code,árvore rubro-negra desbalanceada
+"No livro <book_name>C++ Primer</book_name>, como implementar sobrecarga de operadores?",coding,bookID_write_code,sobrecarga de operadores,C++ Primer
+"Implemente um algoritmo de compressão usando codificação de Huffman",coding,write_code,codificação de Huffman
+"No livro <book_name>Rust Programming</book_name>, como implementar um smart pointer personalizado?",coding,bookID_write_code,smart pointer,Rust Programming
+"Crie uma função que implemente o algoritmo de Dijkstra",coding,write_code,algoritmo de Dijkstra
+"No livro <book_name>The Rust Book</book_name>, como implementar traits seguros para concorrência?",coding,bookID_write_code,traits concorrentes,The Rust Book
+"Implemente o padrão de projeto Strategy",coding,write_code,padrão strategy
+"No livro <book_name>Advanced Python Programming</book_name>, como implementar um metaclass?",coding,bookID_write_code,metaclass,Advanced Python Programming
+"Resuma o livro 'A Arte da Guerra'",summarization,book_summarization,estratégia militar,A Arte da Guerra
+"Faça um resumo do artigo 'Neural Networks: State of the Art'",summarization,article_summarization,redes neurais,Neural Networks: State of the Art
+"Resuma este texto: O teorema de Pitágoras estabelece que em um triângulo retângulo, o quadrado da hipotenusa é igual à soma dos quadrados dos catetos.",summarization,sentence_summarization,teorema de Pitágoras
+"Resuma o livro 'O Processo' de Kafka",summarization,book_summarization,literatura moderna,O Processo
+"Faça um resumo do artigo 'Renewable Energy Technologies'",summarization,article_summarization,energia renovável,Renewable Energy Technologies
+"Resuma o livro 'O Contrato Social'",summarization,book_summarization,filosofia política,O Contrato Social
+"Faça um resumo do artigo 'The Impact of 5G Technology'",summarization,article_summarization,tecnologia 5G,The Impact of 5G Technology
+"Resuma este texto: A Lei de Mendel explica os padrões básicos da hereditariedade através do conceito de genes dominantes e recessivos.",summarization,sentence_summarization,leis de Mendel
+"Resuma o livro 'O Leviatã' de Hobbes",summarization,book_summarization,teoria política,O Leviatã
+"Resuma o livro <book_name>A Arte da Guerra</book_name>",summarization,book_summarization,estratégia militar,A Arte da Guerra
+"Faça um resumo do artigo 'Neural Networks: State of the Art'",summarization,article_summarization,redes neurais,Neural Networks: State of the Art
+"Resuma este texto: O teorema de Pitágoras estabelece que em um triângulo retângulo, o quadrado da hipotenusa é igual à soma dos quadrados dos catetos.",summarization,sentence_summarization,teorema de Pitágoras
+"Resuma o livro <book_name>O Processo</book_name>",summarization,book_summarization,literatura moderna,O Processo
+"Faça um resumo do artigo 'Renewable Energy Technologies'",summarization,article_summarization,energia renovável,Renewable Energy Technologies
+"Resuma este parágrafo: A teoria da relatividade especial, proposta por Einstein em 1905, revolucionou nossa compreensão do espaço e do tempo.",summarization,sentence_summarization,relatividade especial
+"Resuma o livro <book_name>O Contrato Social</book_name>",summarization,book_summarization,filosofia política,O Contrato Social
+"Faça um resumo do artigo 'The Impact of 5G Technology'",summarization,article_summarization,tecnologia 5G,The Impact of 5G Technology
+"Resuma este texto: A Lei de Mendel explica os padrões básicos da hereditariedade através do conceito de genes dominantes e recessivos.",summarization,sentence_summarization,leis de Mendel
+"Resuma o livro <book_name>O Leviatã</book_name>",summarization,book_summarization,teoria política,O Leviatã
+"No artigo <article_name>Deep Learning in Medical Imaging</article_name>, como implementar uma CNN para detecção de tumores?",coding,articleID_write_code,detecção de tumores,Deep Learning in Medical Imaging
+"No artigo <article_name>Recent Advances in NLP</article_name>, como implementar um transformer?",coding,articleID_write_code,transformer,Recent Advances in NLP
+"No artigo <article_name>Blockchain Consensus Mechanisms</article_name>, explique como funciona este código de proof-of-work: def mine_block(prev_hash, transactions): nonce = 0 while True: block = create_block(prev_hash, transactions, nonce)",coding,articleID_explain_code,proof of work,Blockchain Consensus Mechanisms
+"Resuma o artigo <article_name>Quantum Computing: State of the Art</article_name>",summarization,articleID_summarization,computação quântica,Quantum Computing: State of the Art
+"No artigo <article_name>Machine Learning for Climate Change</article_name>, qual a metodologia usada para previsão de temperaturas?",question_answering,articleID_question,previsão de temperaturas,Machine Learning for Climate Change
+"Onde posso encontrar informações sobre redes adversariais no artigo <article_name>GANs: A Comprehensive Review</article_name>?",searching_for_information,articleID_search,redes adversariais,GANs: A Comprehensive Review
+"No artigo <article_name>Reinforcement Learning in Robotics</article_name>, como implementar um agente DQN?",coding,articleID_write_code,DQN,Reinforcement Learning in Robotics
+"No artigo <article_name>Secure Smart Contracts</article_name>, qual o problema neste código Solidity: function withdraw() public { msg.sender.transfer(balance); balance = 0; }",coding,articleID_debug_code,reentrancy,Secure Smart Contracts
+"No artigo <article_name>Graph Neural Networks</article_name>, explique como funciona este código de agregação de nós: def aggregate_neighbors(self, nodes, adj_matrix)",coding,articleID_explain_code,agregação de nós,Graph Neural Networks
+"Resuma o artigo <article_name>The Future of Edge Computing</article_name>",summarization,articleID_summarization,edge computing,The Future of Edge Computing
+"Onde posso encontrar informações sobre aprendizado por reforço no artigo <article_name>Reinforcement Learning: An Overview</article_name>?",searching_for_information,articleID_search,aprendizado por reforço,Reinforcement Learning: An Overview
+"Onde posso encontrar informações sobre redes neurais convolucionais no artigo <article_name>Deep Learning for Image Recognition</article_name>?",searching_for_information,articleID_search,redes neurais convolucionais,Deep Learning for Image Recognition
+"Onde posso encontrar informações sobre aprendizado supervisionado no artigo <article_name>Supervised Learning Techniques</article_name>?",searching_for_information,articleID_search,aprendizado supervisionado,Supervised Learning Techniques
+"Onde posso encontrar informações sobre aprendizado não supervisionado no artigo <article_name>Unsupervised Learning Methods</article_name>?",searching_for_information,articleID_search,aprendizado não supervisionado,Unsupervised Learning Methods
+"Onde posso encontrar informações sobre aprendizado por reforço profundo no artigo <article_name>Deep Reinforcement Learning</article_name>?",searching_for_information,articleID_search,aprendizado por reforço profundo,Deep Reinforcement Learning
+"Crie uma função que gere a sequência de Fibonacci",coding,write_code,sequência de Fibonacci
+"No livro <book_name>Clean Code</book_name>, como implementar uma factory method?",coding,bookID_write_code,factory method,Clean Code
+"Por que esse código de árvore binária está causando stack overflow: def traversal(root): if root: traversal(root.left); print(root.val); traversal(root.right)",coding,debug_code,árvore binária stack overflow
+"No livro <book_name>Design Patterns</book_name>, qual o problema neste código singleton: public class Singleton { private static Singleton instance; private Singleton(){} public static Singleton getInstance() { return new Singleton(); }}",coding,bookID_debug_code,singleton pattern,Design Patterns
+"Explique como funciona este código de ordenação: def mergesort(arr): if len(arr)>1: mid = len(arr)//2; L = arr[:mid]; R = arr[mid:]; mergesort(L); mergesort(R)",coding,explain_code,mergesort recursivo
+"No livro <book_name>Introduction to Algorithms</book_name>, explique como funciona este algoritmo de busca em largura: def bfs(graph, start): visited = set(); queue = [start]; while queue: vertex = queue.pop(0)",coding,bookID_explain_code,busca em largura,Introduction to Algorithms
+"Implemente uma fila usando duas pilhas",coding,write_code,fila com duas pilhas
+"No livro <book_name>Cracking the Coding Interview</book_name>, como implementar um algoritmo de detecção de ciclo em lista ligada?",coding,bookID_write_code,detecção de ciclo,Cracking the Coding Interview
+"Por que esse código de quicksort está causando stack overflow: def quicksort(arr): pivot = arr[0]; left = [x for x in arr[1:] if x < pivot]; right = [x for x in arr[1:] if x >= pivot]",coding,debug_code,quicksort stack overflow
+"Resuma o livro <book_name>Guerra e Paz</book_name>",summarization,book_summarization,literatura russa,Guerra e Paz
+"Faça um resumo do artigo 'Avanços em Inteligência Artificial'",summarization,article_summarization,inteligência artificial,Avanços em Inteligência Artificial
+"Resuma este texto: A penicilina foi descoberta acidentalmente por Alexander Fleming em 1928, revolucionando o tratamento de infecções bacterianas.",summarization,sentence_summarization,descoberta da penicilina
+"Resuma o livro <book_name>Crime e Castigo</book_name>",summarization,book_summarization,literatura russa,Crime e Castigo
+"Faça um resumo do artigo 'Neurociência Cognitiva'",summarization,article_summarization,neurociência,Neurociência Cognitiva
+"Resuma este parágrafo: A Guerra Fria foi um período de tensão geopolítica entre os Estados Unidos e a União Soviética após a Segunda Guerra Mundial.",summarization,sentence_summarization,Guerra Fria
+"Resuma o livro <book_name>Os Miseráveis</book_name>",summarization,book_summarization,literatura francesa,Os Miseráveis
+"Faça um resumo do artigo 'Nanotecnologia em Medicina'",summarization,article_summarization,nanotecnologia,Nanotecnologia em Medicina
+"Resuma este texto: A divisão celular por meiose é fundamental para a reprodução sexuada, produzindo células com metade do número de cromossomos.",summarization,sentence_summarization,meiose
+"Resuma o livro <book_name>Ulisses</book_name>",summarization,book_summarization,literatura moderna,Ulisses
+"Faça um resumo do artigo 'Psicologia do Desenvolvimento'",summarization,article_summarization,psicologia,Psicologia do Desenvolvimento
+"Resuma este parágrafo: O sistema nervoso central é responsável por processar informações e coordenar as respostas do organismo aos estímulos.",summarization,sentence_summarization,sistema nervoso central
+"Resuma o livro <book_name>Anna Karenina</book_name>",summarization,book_summarization,literatura russa,Anna Karenina
+"Faça um resumo do artigo 'Mudanças Climáticas no Século XXI'",summarization,article_summarization,clima,Mudanças Climáticas no Século XXI
+"Resuma este texto: A fotossíntese é o processo pelo qual plantas convertem luz solar em energia química, produzindo glicose e oxigênio.",summarization,sentence_summarization,fotossíntese
+"Resuma o livro <book_name>Em Busca do Tempo Perdido</book_name>",summarization,book_summarization,literatura francesa,Em Busca do Tempo Perdido
+"Faça um resumo do artigo 'Tecnologias Emergentes'",summarization,article_summarization,tecnologia,Tecnologias Emergentes
+"Resuma este parágrafo: A Revolução Industrial marcou a transição para novos processos de manufatura no século XVIII.",summarization,sentence_summarization,Revolução Industrial
+"Resuma o livro <book_name>O Processo</book_name>",summarization,book_summarization,literatura alemã,O Processo
+"Faça um resumo do artigo 'Energia Nuclear: Pros e Contras'",summarization,article_summarization,energia nuclear,Energia Nuclear: Pros e Contras
+"Resuma este texto: A teoria da evolução explica como as espécies se modificam ao longo do tempo através da seleção natural.",summarization,sentence_summarization,teoria da evolução
+"Resuma o livro <book_name>Madame Bovary</book_name>",summarization,book_summarization,literatura francesa,Madame Bovary
+"Faça um resumo do artigo 'Inteligência Emocional'",summarization,article_summarization,psicologia,Inteligência Emocional
+"Resuma este parágrafo: O DNA contém as instruções genéticas usadas no desenvolvimento e funcionamento de todos os organismos vivos.",summarization,sentence_summarization,DNA
+"Resuma o livro <book_name>O Estrangeiro</book_name>",summarization,book_summarization,literatura francesa,O Estrangeiro
+"Faça um resumo do artigo 'Robótica Avançada'",summarization,article_summarization,robótica,Robótica Avançada
+"Resuma este texto: A Lei da Gravidade Universal explica como os corpos se atraem mutuamente no universo.",summarization,sentence_summarization,lei da gravidade
+"Resuma o livro <book_name>Orgulho e Preconceito</book_name>",summarization,book_summarization,literatura inglesa,Orgulho e Preconceito
+"Faça um resumo do artigo 'Medicina Personalizada'",summarization,article_summarization,medicina,Medicina Personalizada
+"Resuma este parágrafo: A Segunda Guerra Mundial foi um conflito global que durou de 1939 a 1945.",summarization,sentence_summarization,Segunda Guerra Mundial
+"Resuma o livro <book_name>O Retrato de Dorian Gray</book_name>",summarization,book_summarization,literatura inglesa,O Retrato de Dorian Gray
+"Faça um resumo do artigo 'Computação Quântica'",summarization,article_summarization,computação quântica,Computação Quântica
+"Resuma este texto: As leis de Kepler descrevem o movimento dos planetas em suas órbitas ao redor do Sol.",summarization,sentence_summarization,leis de Kepler
+"Resuma o livro <book_name>O Conde de Monte Cristo</book_name>",summarization,book_summarization,literatura francesa,O Conde de Monte Cristo
+"Faça um resumo do artigo 'Biodiversidade Marinha'",summarization,article_summarization,biologia marinha,Biodiversidade Marinha
+"Resuma este parágrafo: A Revolução Russa de 1917 levou à criação do primeiro estado socialista do mundo.",summarization,sentence_summarization,Revolução Russa
+"Resuma o livro <book_name>O Vermelho e o Negro</book_name>",summarization,book_summarization,literatura francesa,O Vermelho e o Negro
+"Faça um resumo do artigo 'Psicologia Cognitiva'",summarization,article_summarization,psicologia cognitiva,Psicologia Cognitiva
+"Resuma este texto: O sistema solar é composto pelo Sol e todos os corpos celestes que orbitam ao seu redor.",summarization,sentence_summarization,sistema solar
+"Resuma o livro <book_name>O Nome da Rosa</book_name>",summarization,book_summarization,literatura italiana,O Nome da Rosa
+"Faça um resumo do artigo 'Biotecnologia Moderna'",summarization,article_summarization,biotecnologia,Biotecnologia Moderna
+"Resuma este parágrafo: O Renascimento foi um período de grandes avanços nas artes e ciências na Europa.",summarization,sentence_summarization,Renascimento
+"Resuma o livro <book_name>Dom Quixote</book_name>",summarization,book_summarization,literatura espanhola,Dom Quixote
+"Faça um resumo do artigo 'Cidades Inteligentes'",summarization,article_summarization,urbanismo,Cidades Inteligentes
+"Resuma este texto: A Teoria da Relatividade mudou nossa compreensão do espaço, tempo e gravidade.",summarization,sentence_summarization,Teoria da Relatividade
+"Resuma o livro <book_name>A Metamorfose</book_name>",summarization,book_summarization,literatura alemã,A Metamorfose
+"Faça um resumo do artigo 'Agricultura Sustentável'",summarization,article_summarization,agricultura,Agricultura Sustentável
+"Resuma este parágrafo: O ciclo da água descreve o movimento contínuo da água na Terra e na atmosfera.",summarization,sentence_summarization,ciclo da água
+"Resuma o livro <book_name>A Divina Comédia</book_name>",summarization,book_summarization,literatura italiana,A Divina Comédia
+"Faça um resumo do artigo 'Realidade Virtual'",summarization,article_summarization,tecnologia,Realidade Virtual
+"Resuma este texto: As células são as unidades básicas de todos os organismos vivos.",summarization,sentence_summarization,células
+"Resuma o livro <book_name>O Hobbit</book_name>",summarization,book_summarization,literatura fantástica,O Hobbit
+"Faça um resumo do artigo 'Economia Circular'",summarization,article_summarization,economia,Economia Circular
+"Resuma este parágrafo: A Declaração Universal dos Direitos Humanos estabelece direitos fundamentais para todos os seres humanos.",summarization,sentence_summarization,direitos humanos
+"Resuma o livro <book_name>Moby Dick</book_name>",summarization,book_summarization,literatura americana,Moby Dick
+"Faça um resumo do artigo 'Inteligência Artificial na Educação'",summarization,article_summarization,educação,Inteligência Artificial na Educação
+"Implemente uma função de busca binária iterativa",coding,write_code,busca binária iterativa
+"Como implementar um middleware de autenticação em Express?",coding,write_code,middleware de autenticação
+"Crie uma função que reverta uma string recursivamente",coding,write_code,reversão recursiva de string
+"Escreva um algoritmo de ordenação por seleção",coding,write_code,selection sort
+"Implemente uma pilha usando array",coding,write_code,implementação de pilha
+"Crie uma classe que implemente uma lista encadeada",coding,write_code,lista encadeada
+"Como implementar um decorator de cache em Python?",coding,write_code,decorator de cache
+"Escreva uma função que encontre o elemento majoritário em um array",coding,write_code,elemento majoritário
+"Implemente o algoritmo de Dijkstra para caminhos mínimos",coding,write_code,algoritmo de Dijkstra
+"Crie uma função que verifique se uma árvore binária é balanceada",coding,write_code,verificação de árvore balanceada
+"Como implementar um pool de conexões para banco de dados?",coding,write_code,pool de conexões
+"Escreva um algoritmo de compressão usando codificação RLE",coding,write_code,codificação RLE
+"Implemente uma fila circular usando array",coding,write_code,fila circular
+"Crie uma função que calcule o produto de matrizes",coding,write_code,produto de matrizes
+"Como implementar um sistema de cache LRU?",coding,write_code,cache LRU
+"Escreva um algoritmo para encontrar o menor ancestral comum em uma árvore",coding,write_code,menor ancestral comum
+"Implemente o padrão Observer",coding,write_code,padrão observer
+"Crie uma função que resolva o problema das N-Rainhas",coding,write_code,N-Rainhas
+"Como implementar um rate limiter?",coding,write_code,rate limiter
+"Escreva um algoritmo de detecção de ciclo em grafo",coding,write_code,detecção de ciclo em grafo
+"Implemente uma tabela hash com encadeamento",coding,write_code,tabela hash
+"Crie uma função que calcule a subsequência comum mais longa",coding,write_code,LCS
+"Como implementar um pool de threads?",coding,write_code,pool de threads
+"Escreva um algoritmo de ordenação topológica",coding,write_code,ordenação topológica
+"Implemente uma árvore Trie",coding,write_code,árvore trie
+"Crie uma função que resolva expressões matemáticas em notação polonesa reversa",coding,write_code,RPN
+"Como implementar um sistema de logging thread-safe?",coding,write_code,logging thread-safe
+"Escreva um algoritmo de busca em profundidade iterativa",coding,write_code,busca em profundidade iterativa
+"Implemente um heap binário",coding,write_code,heap binário
+"Crie uma função que encontre o caminho em um labirinto",coding,write_code,pathfinding
+"Como implementar um serviço de mensageria pub/sub?",coding,write_code,pub/sub
+"Escreva um algoritmo de união-busca (Union-Find)",coding,write_code,union-find
+"Implemente uma árvore AVL",coding,write_code,árvore AVL
+"Crie uma função que resolva o problema da mochila 0/1",coding,write_code,knapsack
+"Como implementar um sistema de cache distribuído?",coding,write_code,cache distribuído
+"Escreva um algoritmo de matching de strings (KMP)",coding,write_code,KMP
+"Implemente uma B-Tree",coding,write_code,B-Tree
+"Crie uma função que calcule a distância de edição entre strings",coding,write_code,distância de edição
+"Como implementar um load balancer round-robin?",coding,write_code,load balancer
+"Escreva um algoritmo de compressão Huffman",coding,write_code,compressão Huffman
+"Implemente uma Skip List",coding,write_code,skip list
+"Crie uma função que resolva o problema do caixeiro viajante",coding,write_code,caixeiro viajante
+"Como implementar um sistema de recomendação colaborativo?",coding,write_code,sistema de recomendação
+"Escreva um algoritmo de multiplicação de números grandes",coding,write_code,multiplicação de números grandes
+"Implemente uma árvore rubro-negra",coding,write_code,árvore rubro-negra
+"Crie uma função que calcule a transformada de Fourier discreta",coding,write_code,FFT
+"Como implementar um sistema de gerenciamento de transações?",coding,write_code,gerenciamento de transações
+"Escreva um algoritmo de matching de padrões em árvores",coding,write_code,tree pattern matching
+"Implemente um Bloom Filter",coding,write_code,bloom filter
+"Crie uma função que resolva equações diferenciais numericamente",coding,write_code,equações diferenciais
+"Como implementar um sistema de cache com política de expiração?",coding,write_code,cache com expiração
+"Por que este código de recursão está causando stack overflow: def factorial(n): return n * factorial(n-1)?",coding,debug_code,recursão infinita
+"No livro <book_name>Clean Code</book_name>, qual o problema neste código: public void saveUser(User user) { if(user != null) { if(user.isValid()) { if(user.hasPermission()) { repository.save(user); }}}",coding,bookID_debug_code,código aninhado,Clean Code
+"No livro <book_name>Java Performance</book_name>, por que este código é ineficiente: String result = ''; for(int i=0; i<1000; i++) { result += i; }",coding,bookID_debug_code,concatenação de strings,Java Performance
+"Por que esta implementação de singleton não é thread-safe: class Singleton { private static Singleton instance; public static getInstance() { if(instance == null) instance = new Singleton(); return instance; }}",coding,debug_code,singleton não thread-safe
+"No livro <book_name>Effective Java</book_name>, como corrigir este leak de memória: class Cache { private Map<String,Object> map = new HashMap<>(); public void add(String key, Object value) { map.put(key,value); }}",coding,bookID_debug_code,memory leak,Effective Java
+"Por que este código de ordenação está em loop infinito: while(i < arr.length) { if(arr[i] > arr[i+1]) swap(arr[i], arr[i+1]); }",coding,debug_code,bubble sort infinito
+"No livro <book_name>Head First Design Patterns</book_name>, como implementar corretamente um observer?",coding,bookID_write_code,padrão observer,Head First Design Patterns
+"No livro <book_name>Clean Architecture</book_name>, como implementar uma camada de persistência desacoplada?",coding,bookID_write_code,persistência desacoplada,Clean Architecture
+"Por que este código de thread está causando deadlock: synchronized(lock1) { synchronized(lock2) { process(); }}",coding,debug_code,deadlock
+"No livro <book_name>Spring in Action</book_name>, como implementar injeção de dependência corretamente?",coding,bookID_write_code,injeção de dependência,Spring in Action
+"Por que esta implementação de lista ligada perde referências: node.next = new Node(value);",coding,debug_code,perda de referência
+"No livro <book_name>Domain-Driven Design</book_name>, como implementar uma entidade rica?",coding,bookID_write_code,entidade rica,Domain-Driven Design
+"Por que este código de recursão está estourando a pilha: def traverse(node): print(node.value); traverse(node.left); traverse(node.right);",coding,debug_code,stack overflow
+"No livro <book_name>Patterns of Enterprise Application Architecture</book_name>, como implementar um repository pattern?",coding,bookID_write_code,repository pattern,Patterns of Enterprise Application Architecture
+"Por que este código de cache não está thread-safe: cache.put(key, compute(key));",coding,debug_code,cache race condition
+"No livro <book_name>Test Driven Development</book_name>, como implementar testes unitários efetivos?",coding,bookID_write_code,testes unitários,Test Driven Development
+"Por que esta query está causando N+1: for(User user : users) { print(user.getOrders()); }",coding,debug_code,problema N+1
+"No livro <book_name>Building Microservices</book_name>, como implementar circuit breaker?",coding,bookID_write_code,circuit breaker,Building Microservices
+"Por que este código de árvore está vazando memória: class Node { Node left; Node right; Node parent; }",coding,debug_code,memory leak em árvore
+"No livro <book_name>Reactive Programming with RxJava</book_name>, como implementar um observable correto?",coding,bookID_write_code,observable pattern,Reactive Programming with RxJava
+"Por que este código de pool está bloqueando: while(pool.isFull()) { wait(); }",coding,debug_code,deadlock em pool
+"No livro <book_name>Microservices Patterns</book_name>, como implementar saga pattern?",coding,bookID_write_code,saga pattern,Microservices Patterns
+"Por que esta implementação de cache está com memory leak: static Map<String,Object> cache = new HashMap<>();",coding,debug_code,memory leak em cache
+"No livro <book_name>Cloud Native Java</book_name>, como implementar resilience patterns?",coding,bookID_write_code,resilience patterns,Cloud Native Java
+"Por que este código de conexão está vazando recursos: Connection conn = getConnection(); executeQuery(conn);",coding,debug_code,resource leak
+"No livro <book_name>Functional Programming in Scala</book_name>, como implementar funções puras?",coding,bookID_write_code,funções puras,Functional Programming in Scala
+"Por que esta implementação de observer causa memory leak: observers.add(new Observer());",coding,debug_code,memory leak em observer
+"No livro <book_name>Kotlin in Action</book_name>, como implementar coroutines corretamente?",coding,bookID_write_code,coroutines,Kotlin in Action
+"Por que este código de buffer está causando overflow: buffer[index++] = value;",coding,debug_code,buffer overflow
+"No livro <book_name>Go Programming Language</book_name>, como implementar goroutines eficientes?",coding,bookID_write_code,goroutines,Go Programming Language
+"Por que esta query está causando deadlock: BEGIN; UPDATE users; UPDATE orders;",coding,debug_code,deadlock em transação
+"No livro <book_name>Docker in Practice</book_name>, como implementar health checks?",coding,bookID_write_code,health checks,Docker in Practice
+"Por que este código de cache está inconsistente: if(!cache.contains(key)) cache.put(key,value);",coding,debug_code,race condition em cache
+"No livro <book_name>Node.js Design Patterns</book_name>, como implementar um middleware?",coding,bookID_write_code,middleware pattern,Node.js Design Patterns
+"Por que esta implementação de pool está vazando conexões: pool.getConnection(); executeQuery();",coding,debug_code,connection leak
+"No livro <book_name>React Patterns</book_name>, como implementar hooks customizados?",coding,bookID_write_code,custom hooks,React Patterns
+"Por que este código de thread está causando starvation: while(true) { lock.acquire(); process(); }",coding,debug_code,thread starvation
+"No livro <book_name>Vue.js Design Patterns</book_name>, como implementar mixins corretamente?",coding,bookID_write_code,vue mixins,Vue.js Design Patterns
+"Por que esta implementação de cache está com race condition: if(cache.isEmpty()) loadCache();",coding,debug_code,race condition
+"No livro <book_name>Angular Best Practices</book_name>, como implementar guards?",coding,bookID_write_code,route guards,Angular Best Practices
+"Por que este código de recursão está causando stackoverflow: def sum(arr): return arr[0] + sum(arr[1:]);",coding,debug_code,recursão infinita
+"No livro <book_name>Python Cookbook</book_name>, como implementar decorators?",coding,bookID_write_code,decorators,Python Cookbook
+"Por que esta query está com problemas de performance: SELECT * FROM users WHERE name LIKE '%john%';",coding,debug_code,query performance
+"No livro <book_name>MongoDB Patterns</book_name>, como implementar schemas eficientes?",coding,bookID_write_code,mongodb schemas,MongoDB Patterns
+"Por que este código de thread está com race condition: counter++; counter--;",coding,debug_code,race condition em contador
+"No livro <book_name>Redis Applied Design Patterns</book_name>, como implementar caching patterns?",coding,bookID_write_code,redis patterns,Redis Applied Design Patterns
+"Por que esta implementação de singleton tem memory leak: private static final Map cache = new HashMap();",coding,debug_code,singleton memory leak
+"No livro <book_name>GraphQL Patterns</book_name>, como implementar resolvers eficientes?",coding,bookID_write_code,graphql resolvers,GraphQL Patterns
+"Por que este código de promise está causando memory leak: new Promise(() => { while(true) {} });",coding,debug_code,promise memory leak
+"No livro <book_name>Kubernetes Patterns</book_name>, como implementar health probes?",coding,bookID_write_code,health probes,Kubernetes Patterns
+"Por que esta implementação de cache está thread-unsafe: static Cache instance = null;",coding,debug_code,thread-unsafe singleton
+"No livro <book_name>AWS Design Patterns</book_name>, como implementar resilient architectures?",coding,bookID_write_code,resilient architectures,AWS Design Patterns
+"Por que este código de conexão está bloqueando: while(!connection.isReady()) Thread.sleep(100);",coding,debug_code,blocking connection
+"No livro <book_name>Kafka Design Patterns</book_name>, como implementar consumers resilientes?",coding,bookID_write_code,kafka consumers,Kafka Design Patterns
+"Por que esta implementação de pool está causando deadlock: synchronized(pool) { pool.acquire(); }",coding,debug_code,pool deadlock
+"No livro <book_name>Azure Architecture Patterns</book_name>, como implementar retry patterns?",coding,bookID_write_code,retry patterns,Azure Architecture Patterns
+"Por que este código de buffer está thread-unsafe: static byte[] buffer = new byte[1024];",coding,debug_code,thread-unsafe buffer
+"No livro <book_name>Elasticsearch in Action</book_name>, como implementar indexação eficiente?",coding,bookID_write_code,elasticsearch indexing,Elasticsearch in Action
+"No livro <book_name>Design Patterns</book_name>, como funciona o padrão Strategy?",question_answering,bookID_question,padrão strategy,Design Patterns
+"No artigo <article_name>Deep Learning Advances</article_name>, qual é o impacto do tamanho do batch no treinamento?",question_answering,articleID_question,batch size,Deep Learning Advances
+"No livro <book_name>Clean Code</book_name>, qual a diferença entre coesão e acoplamento?",question_answering,bookID_question,coesão e acoplamento,Clean Code
+"No artigo <article_name>Blockchain Technology</article_name>, como funciona o consenso PoW?",question_answering,articleID_question,proof of work,Blockchain Technology
+"No livro <book_name>Introduction to Algorithms</book_name>, qual a complexidade do QuickSort?",question_answering,bookID_question,complexidade quicksort,Introduction to Algorithms
+"No artigo <article_name>Neural Networks Review</article_name>, qual a função do dropout?",question_answering,articleID_question,dropout,Neural Networks Review
+"No livro <book_name>Head First Java</book_name>, como funciona a herança múltipla?",question_answering,bookID_question,herança múltipla,Head First Java
+"No artigo <article_name>Machine Learning Applications</article_name>, qual o papel do regularization?",question_answering,articleID_question,regularization,Machine Learning Applications
+"No livro <book_name>Python Cookbook</book_name>, como funcionam os decorators?",question_answering,bookID_question,decorators,Python Cookbook
+"No artigo <article_name>AI Ethics</article_name>, quais são os principais desafios éticos?",question_answering,articleID_question,desafios éticos,AI Ethics
+"No livro <book_name>Refactoring</book_name>, o que são code smells?",question_answering,bookID_question,code smells,Refactoring
+"No artigo <article_name>Cloud Computing Trends</article_name>, quais são as vantagens do serverless?",question_answering,articleID_question,serverless,Cloud Computing Trends
+"No livro <book_name>Domain-Driven Design</book_name>, o que é um bounded context?",question_answering,bookID_question,bounded context,Domain-Driven Design
+"No artigo <article_name>Cybersecurity Advances</article_name>, como funciona o zero trust?",question_answering,articleID_question,zero trust,Cybersecurity Advances
+"No livro <book_name>Effective Java</book_name>, por que usar classes imutáveis?",question_answering,bookID_question,classes imutáveis,Effective Java
+"No artigo <article_name>Data Science Methods</article_name>, qual a importância do feature engineering?",question_answering,articleID_question,feature engineering,Data Science Methods
+"No livro <book_name>C++ Primer</book_name>, como funciona o polimorfismo?",question_answering,bookID_question,polimorfismo,C++ Primer
+"No artigo <article_name>Quantum Computing Review</article_name>, o que são qubits?",question_answering,articleID_question,qubits,Quantum Computing Review
+"No livro <book_name>Operating System Concepts</book_name>, como funciona o deadlock?",question_answering,bookID_question,deadlock,Operating System Concepts
+"No artigo <article_name>5G Technology</article_name>, quais são os benefícios do network slicing?",question_answering,articleID_question,network slicing,5G Technology
+"No livro <book_name>Database Systems</book_name>, o que é normalização?",question_answering,bookID_question,normalização,Database Systems
+"No artigo <article_name>IoT Security</article_name>, quais são as principais vulnerabilidades?",question_answering,articleID_question,vulnerabilidades IoT,IoT Security
+"No livro <book_name>Artificial Intelligence</book_name>, como funciona o algoritmo A*?",question_answering,bookID_question,algoritmo A*,Artificial Intelligence
+"No artigo <article_name>Edge Computing</article_name>, quais são as vantagens da computação na borda?",question_answering,articleID_question,vantagens edge computing,Edge Computing
+"No livro <book_name>Clean Architecture</book_name>, o que é inversão de dependência?",question_answering,bookID_question,inversão de dependência,Clean Architecture
+"No artigo <article_name>Big Data Analytics</article_name>, como funciona o MapReduce?",question_answering,articleID_question,mapreduce,Big Data Analytics
+"No livro <book_name>Test-Driven Development</book_name>, o que é mocking?",question_answering,bookID_question,mocking,Test-Driven Development
+"No artigo <article_name>DevOps Practices</article_name>, qual a importância do CI/CD?",question_answering,articleID_question,CI/CD,DevOps Practices
+"No livro <book_name>Microservices Patterns</book_name>, como funciona o circuit breaker?",question_answering,bookID_question,circuit breaker,Microservices Patterns
+"No artigo <article_name>Container Security</article_name>, como implementar segurança em containers?",question_answering,articleID_question,container security,Container Security
+"No livro <book_name>Data Structures</book_name>, o que é uma árvore AVL?",question_answering,bookID_question,árvore AVL,Data Structures
+"No artigo <article_name>Cryptography Advances</article_name>, como funciona o blockchain?",question_answering,articleID_question,blockchain,Cryptography Advances
+"No livro <book_name>Software Architecture</book_name>, o que é CQRS?",question_answering,bookID_question,CQRS,Software Architecture
+"No artigo <article_name>Network Protocols</article_name>, como funciona o TCP/IP?",question_answering,articleID_question,TCP/IP,Network Protocols
+"No livro <book_name>Patterns of Enterprise</book_name>, o que é um Unit of Work?",question_answering,bookID_question,unit of work,Patterns of Enterprise
+"No artigo <article_name>Web Security</article_name>, como prevenir XSS?",question_answering,articleID_question,XSS prevention,Web Security
+"No livro <book_name>Docker in Practice</book_name>, como funciona o networking?",question_answering,bookID_question,docker networking,Docker in Practice
+"No artigo <article_name>API Design</article_name>, quais são as melhores práticas REST?",question_answering,articleID_question,REST practices,API Design
+"No livro <book_name>Kubernetes Patterns</book_name>, o que são pods?",question_answering,bookID_question,kubernetes pods,Kubernetes Patterns
+"No artigo <article_name>Software Testing</article_name>, como implementar testes de integração?",question_answering,articleID_question,integration testing,Software Testing
+"No livro <book_name>React Patterns</book_name>, como funcionam os hooks?",question_answering,bookID_question,react hooks,React Patterns
+"No artigo <article_name>Microservices Architecture</article_name>, como garantir resiliência?",question_answering,articleID_question,microservices resilience,Microservices Architecture
+"No livro <book_name>Vue.js Guide</book_name>, o que é o Vuex?",question_answering,bookID_question,vuex,Vue.js Guide
+"No artigo <article_name>Progressive Web Apps</article_name>, como implementar service workers?",question_answering,articleID_question,service workers,Progressive Web Apps
+"No livro <book_name>MongoDB Patterns</book_name>, como modelar relacionamentos?",question_answering,bookID_question,mongodb relationships,MongoDB Patterns
+"No artigo <article_name>Database Performance</article_name>, como otimizar queries?",question_answering,articleID_question,query optimization,Database Performance
+"No livro <book_name>Node.js Design</book_name>, como funciona o event loop?",question_answering,bookID_question,event loop,Node.js Design
+"No artigo <article_name>Frontend Architecture</article_name>, como implementar micro frontends?",question_answering,articleID_question,micro frontends,Frontend Architecture
+"No livro <book_name>GraphQL Guide</book_name>, o que são resolvers?",question_answering,bookID_question,graphql resolvers,GraphQL Guide
+"No artigo <article_name>Cloud Native</article_name>, como implementar observability?",question_answering,articleID_question,observability,Cloud Native
+"No livro <book_name>Site Reliability</book_name>, o que são SLOs?",question_answering,bookID_question,SLOs,Site Reliability
+"No artigo <article_name>Serverless Computing</article_name>, quais são as melhores práticas?",question_answering,articleID_question,serverless practices,Serverless Computing
+"No livro <book_name>AWS Architecture</book_name>, como funciona o Auto Scaling?",question_answering,bookID_question,auto scaling,AWS Architecture
+"No artigo <article_name>Infrastructure as Code</article_name>, como usar Terraform?",question_answering,articleID_question,terraform usage,Infrastructure as Code
+"No livro <book_name>Artificial Intelligence</book_name>, como usar redes neurais convolucionais?",question_answering,bookID_question,redes neurais convolucionais,Artificial Intelligence
+"O que é regressão logística?",question_answering,definition,regressão logística
+"Como resolver uma derivada parcial de segunda ordem?",question_answering,problem_solving,derivada parcial de segunda ordem
+"No artigo <article_name>Deep Learning Techniques</article_name>, qual a diferença entre CNN e RNN?",question_answering,articleID_question,CNN vs RNN,Deep Learning Techniques
+"No livro <book_name>Machine Learning</book_name>, como funciona o gradient descent?",question_answering,bookID_question,gradient descent,Machine Learning 
+"O que é um banco de dados não-relacional?",question_answering,definition,banco de dados não-relacional
+"Como calcular a complexidade de um algoritmo?",question_answering,problem_solving,complexidade algorítmica
+"No artigo <article_name>Neural Networks</article_name>, como funciona backpropagation?",question_answering,articleID_question,backpropagation,Neural Networks
+"No livro <book_name>Data Science</book_name>, como fazer feature selection?",question_answering,bookID_question,feature selection,Data Science
+"O que é um sistema distribuído?",question_answering,definition,sistema distribuído
+"Como resolver equações diferenciais ordinárias?",question_answering,problem_solving,equações diferenciais ordinárias
+"No artigo <article_name>Computer Vision</article_name>, como implementar detecção de objetos?",question_answering,articleID_question,detecção de objetos,Computer Vision
+"No livro <book_name>Statistical Learning</book_name>, como avaliar um modelo de classificação?",question_answering,bookID_question,avaliação de modelo,Statistical Learning
+"O que é programação funcional?",question_answering,definition,programação funcional
+"Como resolver problemas de otimização linear?",question_answering,problem_solving,otimização linear
+"No artigo <article_name>Reinforcement Learning</article_name>, como funciona Q-learning?",question_answering,articleID_question,Q-learning,Reinforcement Learning
+"O que é inteligência artificial?",question_answering,definition,inteligência artificial
+"Como calcular a integral definida?",question_answering,problem_solving,integral definida
+"No livro <book_name>Deep Learning</book_name>, como funcionam as CNNs?",question_answering,bookID_question,CNNs,Deep Learning
+"No artigo <article_name>Machine Learning</article_name>, qual o papel do bias?",question_answering,articleID_question,bias,Machine Learning
+"O que é overfitting?",question_answering,definition,overfitting
+"Como resolver sistemas lineares?",question_answering,problem_solving,sistemas lineares
+"No livro <book_name>Pattern Recognition</book_name>, o que é clustering?",question_answering,bookID_question,clustering,Pattern Recognition
+"No artigo <article_name>Data Mining</article_name>, como fazer feature extraction?",question_answering,articleID_question,feature extraction,Data Mining
+"O que é blockchain?",question_answering,definition,blockchain
+"Como calcular a variância amostral?",question_answering,problem_solving,variância amostral
+"No livro <book_name>NLP</book_name>, como funciona word embedding?",question_answering,bookID_question,word embedding,NLP
+"No artigo <article_name>Computer Vision</article_name>, como funciona YOLO?",question_answering,articleID_question,YOLO,Computer Vision
+"O que é aprendizado não supervisionado?",question_answering,definition,aprendizado não supervisionado
+"Como resolver equações diferenciais parciais?",question_answering,problem_solving,equações diferenciais parciais
+"No livro <book_name>Reinforcement Learning</book_name>, o que é policy gradient?",question_answering,bookID_question,policy gradient,Reinforcement Learning
+"No artigo <article_name>Neural Nets</article_name>, como funciona LSTM?",question_answering,articleID_question,LSTM,Neural Nets
+"O que é transfer learning?",question_answering,definition,transfer learning
+"Como implementar validação cruzada?",question_answering,problem_solving,validação cruzada
+"No livro <book_name>Statistics</book_name>, como aplicar teste de hipótese?",question_answering,bookID_question,teste de hipótese,Statistics
+"No artigo <article_name>Deep Networks</article_name>, como funciona ResNet?",question_answering,articleID_question,ResNet,Deep Networks
+"O que é gradient descent?",question_answering,definition,gradient descent
+"Como calcular eigenvalores?",question_answering,problem_solving,eigenvalores
+"No livro <book_name>AI</book_name>, como funciona o algoritmo A*?",question_answering,bookID_question,algoritmo A*,AI
+"No artigo <article_name>GANs</article_name>, como funcionam redes adversariais?",question_answering,articleID_question,redes adversariais,GANs
+"O que é batch normalization?",question_answering,definition,batch normalization
